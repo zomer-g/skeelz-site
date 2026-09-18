@@ -1,0 +1,7493 @@
+{
+ "source": "https://jobs.skeelz.co.il",
+ "generated_at": "2026-09-18T07:46:58.124Z",
+ "skills": [
+  {
+   "id": "677e68ea063529e50d3e9822",
+   "name": "אדמיניסטרציה"
+  },
+  {
+   "id": "677e68ea063529e50d3e981f",
+   "name": "הדרכה והוראה"
+  },
+  {
+   "id": "677e68ea063529e50d3e9826",
+   "name": "התבטאות בכתב ובעל פה"
+  },
+  {
+   "id": "677e68ea063529e50d3e9828",
+   "name": "חשיבה יצירתית"
+  },
+  {
+   "id": "677e68ea063529e50d3e9821",
+   "name": "טיפול ואמפתיה"
+  },
+  {
+   "id": "67e3d09b217be927119cb96b",
+   "name": "ידע טכנולוגי"
+  },
+  {
+   "id": "677e68ea063529e50d3e981c",
+   "name": "ידע פיננסי"
+  },
+  {
+   "id": "677e68ea063529e50d3e9825",
+   "name": "יזמות"
+  },
+  {
+   "id": "677e68ea063529e50d3e981a",
+   "name": "לימוד עצמי ומהיר"
+  },
+  {
+   "id": "677e68ea063529e50d3e9827",
+   "name": "מולטיטסקינג"
+  },
+  {
+   "id": "677e68ea063529e50d3e981d",
+   "name": "מיומנויות דיגיטליות"
+  },
+  {
+   "id": "677e68ea063529e50d3e981b",
+   "name": "ניהול אנשים"
+  },
+  {
+   "id": "677e68ea063529e50d3e9823",
+   "name": "ניהול זמן עצמאי"
+  },
+  {
+   "id": "677e68ea063529e50d3e9819",
+   "name": "ניתוח והצגת נתונים"
+  },
+  {
+   "id": "677e68ea063529e50d3e9824",
+   "name": "עבודה בצוות"
+  },
+  {
+   "id": "677e68ea063529e50d3e9820",
+   "name": "שיווק ומכירות"
+  },
+  {
+   "id": "677e68ea063529e50d3e981e",
+   "name": "שירותיות"
+  }
+ ],
+ "districts": [
+  "ב\"ש והדרום",
+  "ת\"א והמרכז",
+  "חיפה וצפון",
+  "ירושלים",
+  "כל הארץ"
+ ],
+ "locations": [
+  {
+   "citySymbol": -2,
+   "city": "עבודה מהבית",
+   "district": "כל הארץ"
+  },
+  {
+   "citySymbol": -1,
+   "city": "פריסה ארצית",
+   "district": "כל הארץ"
+  },
+  {
+   "citySymbol": 0,
+   "city": "עיר- חסר/לא זוהתה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 7,
+   "city": "שחר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 10,
+   "city": "תירוש",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 11,
+   "city": "ניר ח\"ן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 12,
+   "city": "סדום",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 13,
+   "city": "חצבה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 15,
+   "city": "נועם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 16,
+   "city": "בית ניר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 18,
+   "city": "שדה משה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 21,
+   "city": "באר אורה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 22,
+   "city": "מקווה ישראל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 23,
+   "city": "אמציה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 24,
+   "city": "לכיש",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 26,
+   "city": "ראש פינה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 27,
+   "city": "שדות מיכה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 28,
+   "city": "מזכרת בתיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 29,
+   "city": "יסוד המעלה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 31,
+   "city": "אופקים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 32,
+   "city": "עוצם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 33,
+   "city": "בת שלמה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 35,
+   "city": "גדות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 36,
+   "city": "שדה דוד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 37,
+   "city": "איתן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 38,
+   "city": "כרי דשא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 39,
+   "city": "גפן",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 40,
+   "city": "מוצא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 41,
+   "city": "אליכין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 43,
+   "city": "מטולה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 44,
+   "city": "זוהר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 46,
+   "city": "יבנאל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 47,
+   "city": "כפר תבור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 48,
+   "city": "מנחמיה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 49,
+   "city": "אילניה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 50,
+   "city": "גבעת עדה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 52,
+   "city": "לוזית",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 53,
+   "city": "עתלית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 55,
+   "city": "נוגה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 57,
+   "city": "כנרת (קבוצה)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 58,
+   "city": "מצפה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 59,
+   "city": "נחושה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 62,
+   "city": "דגניה א'",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 63,
+   "city": "כנרת (מושבה)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 64,
+   "city": "יד רמב\"ם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 65,
+   "city": "מגדל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 66,
+   "city": "מרחביה (קיבוץ)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 67,
+   "city": "אור הנר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 69,
+   "city": "ניר עוז",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 70,
+   "city": "אשדוד",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 71,
+   "city": "אשבול",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 72,
+   "city": "גן שמואל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 74,
+   "city": "עין הוד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 75,
+   "city": "נטע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 76,
+   "city": "כפר גלעדי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 77,
+   "city": "איילת השחר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 78,
+   "city": "קרית ענבים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 79,
+   "city": "דגניה ב'",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 80,
+   "city": "נהלל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 82,
+   "city": "עין חרוד (מאוחד)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 84,
+   "city": "תל יוסף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 85,
+   "city": "כפר יחזקאל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 86,
+   "city": "גבע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 88,
+   "city": "כרם בן שמן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 89,
+   "city": "עין חרוד (איחוד)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 90,
+   "city": "חפצי-בה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 92,
+   "city": "גיניגר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 94,
+   "city": "בלפוריה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 95,
+   "city": "בית אלפא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 96,
+   "city": "יגור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 97,
+   "city": "מרחביה (מושב)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 98,
+   "city": "כפר מל\"ל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 99,
+   "city": "מצפה רמון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 102,
+   "city": "מאיר שפיה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 103,
+   "city": "תל עדשים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 104,
+   "city": "מזרע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 106,
+   "city": "כפר גדעון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 107,
+   "city": "כפר סילבר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 112,
+   "city": "כפר חסידים א'",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 113,
+   "city": "אדירים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 115,
+   "city": "חופית",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 122,
+   "city": "רמת ישי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 126,
+   "city": "שריד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 127,
+   "city": "רמת רחל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 128,
+   "city": "גת רימון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 130,
+   "city": "משמר העמק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 132,
+   "city": "כפר ברוך",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 133,
+   "city": "גבת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 134,
+   "city": "יפעת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 135,
+   "city": "רמת דוד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 139,
+   "city": "עין שמר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 140,
+   "city": "כפר יהושע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 141,
+   "city": "ברק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 142,
+   "city": "שדה יעקב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 143,
+   "city": "בית זרע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 144,
+   "city": "גן שלמה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 145,
+   "city": "גדיש",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 146,
+   "city": "דבורה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 147,
+   "city": "גבעת ברנר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 154,
+   "city": "תל מונד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 155,
+   "city": "באר טוביה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 156,
+   "city": "עיינות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 157,
+   "city": "עין ורד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 158,
+   "city": "נען",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 159,
+   "city": "בית חנן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 160,
+   "city": "חולדה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 162,
+   "city": "חרות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 163,
+   "city": "תימורים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 164,
+   "city": "מלאה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 165,
+   "city": "ניר יפה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 166,
+   "city": "גן יבנה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 167,
+   "city": "עין החורש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 168,
+   "city": "כפר יונה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 170,
+   "city": "כפר יעבץ",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 171,
+   "city": "פרדסיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 173,
+   "city": "גבעת חיים (מאוחד)",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 174,
+   "city": "נטעים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 175,
+   "city": "אביחיל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 176,
+   "city": "אפיקים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 177,
+   "city": "כפר ביל\"ו",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 178,
+   "city": "רמת יוחנן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 180,
+   "city": "כפר אז\"ר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 182,
+   "city": "אבן יהודה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 183,
+   "city": "ירקונה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 184,
+   "city": "רמת הכובש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 186,
+   "city": "נעורים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 187,
+   "city": "כפר הס",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 188,
+   "city": "אשדות יעקב (מאוחד)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 189,
+   "city": "כפר פינס",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 190,
+   "city": "כפר ויתקין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 191,
+   "city": "הדר עם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 192,
+   "city": "כפר החורש",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 193,
+   "city": "כפר חיים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 194,
+   "city": "משמר השרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 195,
+   "city": "קדימה-צורן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 196,
+   "city": "גיבתון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 197,
+   "city": "מעברות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 198,
+   "city": "צופית",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 199,
+   "city": "אשדות יעקב (איחוד)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 200,
+   "city": "בית ינאי",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 202,
+   "city": "בית עובד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 204,
+   "city": "אלישיב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 205,
+   "city": "חוגלה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 206,
+   "city": "רמות השבים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 207,
+   "city": "גבעת ח\"ן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 208,
+   "city": "מוצא עילית",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 212,
+   "city": "בית צבי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 213,
+   "city": "משמרות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 217,
+   "city": "כפר הרא\"ה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 218,
+   "city": "גני עם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 219,
+   "city": "חיבת ציון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 220,
+   "city": "כפר ביאליק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 223,
+   "city": "עין עירון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 224,
+   "city": "שושנת העמקים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 225,
+   "city": "גן השומרון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 229,
+   "city": "גני תקווה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 230,
+   "city": "מעש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 232,
+   "city": "שפיים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 233,
+   "city": "ידידיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 234,
+   "city": "ביצרון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 235,
+   "city": "חבצלת השרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 237,
+   "city": "שער העמקים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 239,
+   "city": "גן חיים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 240,
+   "city": "יקנעם עילית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 241,
+   "city": "יקנעם (מושבה)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 242,
+   "city": "בית השיטה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 243,
+   "city": "קריית שמואל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 246,
+   "city": "נתיבות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 247,
+   "city": "רשפון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 248,
+   "city": "בית שעריים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 249,
+   "city": "כפר סירקין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 250,
+   "city": "הזורע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 252,
+   "city": "ביתן אהרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 253,
+   "city": "חולתה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 254,
+   "city": "כפר המכבי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 255,
+   "city": "כפר חיטים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 256,
+   "city": "ניר דוד (תל עמל)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 257,
+   "city": "נופך",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 259,
+   "city": "שדה נחום",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 262,
+   "city": "גינוסר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 263,
+   "city": "מסדה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 264,
+   "city": "שער הגולן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 265,
+   "city": "בית יוסף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 267,
+   "city": "כפר שמריהו",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 268,
+   "city": "טירת צבי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 269,
+   "city": "מולדת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 270,
+   "city": "עין השופט",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 272,
+   "city": "מעוז חיים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 273,
+   "city": "עין גב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 274,
+   "city": "כפר מנחם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 276,
+   "city": "צור משה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 278,
+   "city": "אושה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 280,
+   "city": "חניתה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 281,
+   "city": "פקיעין חדשה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 282,
+   "city": "שבי ציון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 283,
+   "city": "רמת הדר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 284,
+   "city": "שדה ורבורג",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 285,
+   "city": "אלונים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 286,
+   "city": "מעלה החמישה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 287,
+   "city": "תל יצחק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 288,
+   "city": "בית יהושע",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 289,
+   "city": "עין המפרץ",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 290,
+   "city": "מעין צבי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 292,
+   "city": "שרונה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 293,
+   "city": "שדה יואב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 294,
+   "city": "אילון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 295,
+   "city": "כפר רופין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 296,
+   "city": "נווה איתן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 297,
+   "city": "כפר מסריק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 298,
+   "city": "מסילות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 300,
+   "city": "דליה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 301,
+   "city": "בית עוזיאל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 302,
+   "city": "דפנה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 303,
+   "city": "דן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 304,
+   "city": "שדה אליהו",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 305,
+   "city": "גשר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 306,
+   "city": "שדמות דבורה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 307,
+   "city": "הזורעים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 308,
+   "city": "מחניים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 309,
+   "city": "נהורה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 310,
+   "city": "כפר גליקסון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 311,
+   "city": "גן שורק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 312,
+   "city": "נווה ים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 313,
+   "city": "אפק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 314,
+   "city": "קרית אונו ב'",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 315,
+   "city": "נגבה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 316,
+   "city": "כפר נטר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 317,
+   "city": "בית אורן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 318,
+   "city": "עמיעוז",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 319,
+   "city": "עמיר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 320,
+   "city": "כפר ורבורג",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 322,
+   "city": "בית הלל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 324,
+   "city": "שאר ישוב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 325,
+   "city": "מצובה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 326,
+   "city": "בית יצחק-שער חפר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 327,
+   "city": "שדות ים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 328,
+   "city": "עזוז",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 329,
+   "city": "שדה נחמיה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 330,
+   "city": "אלומות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 331,
+   "city": "ניר צבי",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 334,
+   "city": "קבוצת יבנה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 335,
+   "city": "רמת השופט",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 336,
+   "city": "דורות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 338,
+   "city": "איבים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 339,
+   "city": "רמת צבי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 340,
+   "city": "גת (קיבוץ)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 342,
+   "city": "גברעם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 343,
+   "city": "חמדיה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 344,
+   "city": "מענית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 345,
+   "city": "כפר סאלד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 346,
+   "city": "גליל ים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 347,
+   "city": "מנרה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 348,
+   "city": "ניר עם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 351,
+   "city": "ניצן",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 352,
+   "city": "גבולות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 353,
+   "city": "בית זייד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 354,
+   "city": "רביבים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 355,
+   "city": "חורשים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 356,
+   "city": "הגושרים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 357,
+   "city": "כפר בלום",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 358,
+   "city": "יד מרדכי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 359,
+   "city": "ניצנים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 360,
+   "city": "גבעת ניל\"י",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 362,
+   "city": "רוחמה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 363,
+   "city": "חפץ חיים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 364,
+   "city": "כפר אוריה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 365,
+   "city": "בית קשת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 366,
+   "city": "שמיר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 367,
+   "city": "עין העמק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 368,
+   "city": "ביריה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 369,
+   "city": "אבן יצחק (גלעד)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 370,
+   "city": "גזר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 371,
+   "city": "כדורי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 372,
+   "city": "רמות נפתלי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 373,
+   "city": "בית הלוי",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 374,
+   "city": "חוקוק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 375,
+   "city": "מגל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 376,
+   "city": "עברון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 377,
+   "city": "המעפיל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 378,
+   "city": "משגב עם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 379,
+   "city": "גאולים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 380,
+   "city": "להבות הבשן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 382,
+   "city": "מכמורת",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 383,
+   "city": "עין הנצי\"ב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 385,
+   "city": "עמיעד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 386,
+   "city": "בני דרור",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 387,
+   "city": "כפר מונש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 388,
+   "city": "כפר קיש",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 389,
+   "city": "בצרה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 390,
+   "city": "רגבה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 392,
+   "city": "קדמה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 393,
+   "city": "גלאון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 394,
+   "city": "שובל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 395,
+   "city": "משמר הנגב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 396,
+   "city": "נבטים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 397,
+   "city": "חצרים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 398,
+   "city": "שרשרת",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 399,
+   "city": "בארי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 400,
+   "city": "אבן שמואל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 402,
+   "city": "ניר יצחק",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 403,
+   "city": "אורים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 405,
+   "city": "נווה אילן",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 406,
+   "city": "חצור-אשדוד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 407,
+   "city": "דברת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 408,
+   "city": "נאות מרדכי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 409,
+   "city": "יחיעם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 412,
+   "city": "קרית שלמה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 413,
+   "city": "צאלים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 414,
+   "city": "קלחים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 415,
+   "city": "שוקדה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 416,
+   "city": "מעין ברוך",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 417,
+   "city": "יקום",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 418,
+   "city": "בני ציון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 419,
+   "city": "סעד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 421,
+   "city": "משאבי שדה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 422,
+   "city": "חרב לאת",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 423,
+   "city": "העוגן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 424,
+   "city": "גבים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 425,
+   "city": "משמרת",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 426,
+   "city": "עין כרמל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 427,
+   "city": "כפר גלים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 428,
+   "city": "ברור חיל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 429,
+   "city": "אלוני אבא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 430,
+   "city": "בית לחם הגלילית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 431,
+   "city": "דלתון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 432,
+   "city": "שמרת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 433,
+   "city": "נחשולים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 434,
+   "city": "החותרים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 435,
+   "city": "נצר סרני",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 436,
+   "city": "עין דור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 437,
+   "city": "רשפים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 439,
+   "city": "שלוחות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 440,
+   "city": "יסודות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 442,
+   "city": "גדעונה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 443,
+   "city": "כפר הנשיא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 444,
+   "city": "רגבים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 445,
+   "city": "רמות מנשה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 446,
+   "city": "אודים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 447,
+   "city": "נורדיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 448,
+   "city": "בני עטרות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 449,
+   "city": "נחלים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 450,
+   "city": "בארות יצחק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 452,
+   "city": "יזראעל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 453,
+   "city": "יפתח",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 454,
+   "city": "סער",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 456,
+   "city": "שורש",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 457,
+   "city": "גזית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 460,
+   "city": "רמת רזיאל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 462,
+   "city": "טל שחר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 463,
+   "city": "געתון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 464,
+   "city": "הראל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 465,
+   "city": "צובה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 466,
+   "city": "בית דגן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 469,
+   "city": "קרית עקרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 472,
+   "city": "אבו גוש",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 473,
+   "city": "אבו סנאן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 475,
+   "city": "דחי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 476,
+   "city": "אום אל - גנם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 478,
+   "city": "אכסאל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 480,
+   "city": "בית ג'ן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 481,
+   "city": "מגאר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 482,
+   "city": "בועיינה-נוג'ידאת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 483,
+   "city": "בענה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 485,
+   "city": "ג'ולס",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 487,
+   "city": "ג'ש (גוש חלב)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 488,
+   "city": "גת בגליל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 489,
+   "city": "דבוריה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 490,
+   "city": "דיר אל-אסד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 492,
+   "city": "דיר חנא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 493,
+   "city": "דיר ראפאת",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 494,
+   "city": "דאלית אל-כרמל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 496,
+   "city": "חורפיש",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 497,
+   "city": "טייבה (בעמק)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 498,
+   "city": "טורעאן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 499,
+   "city": "יפיע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 502,
+   "city": "ירכא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 504,
+   "city": "כאבול",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 505,
+   "city": "כאוכב אבו אל-היגא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 507,
+   "city": "כפר יאסיף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 508,
+   "city": "כפר כמא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 509,
+   "city": "כפר כנא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 510,
+   "city": "כפר מנדא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 511,
+   "city": "עילוט",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 512,
+   "city": "כפר מצר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 514,
+   "city": "עין ראפה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 515,
+   "city": "שבות עם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 516,
+   "city": "מג'ד אל-כרום",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 517,
+   "city": "מזרעה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 518,
+   "city": "מעיליא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 520,
+   "city": "משהד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 521,
+   "city": "עין נקובא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 522,
+   "city": "נחף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 523,
+   "city": "ניין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 524,
+   "city": "נאעורה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 525,
+   "city": "סאג'ור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 526,
+   "city": "סולם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 527,
+   "city": "שזור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 528,
+   "city": "עוזייר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 529,
+   "city": "אעבלין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 530,
+   "city": "עיילבון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 531,
+   "city": "עראבה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 532,
+   "city": "עין מאהל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 534,
+   "city": "עספיא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 535,
+   "city": "פסוטה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 536,
+   "city": "פקיעין (בוקייעה)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 537,
+   "city": "פוריידיס",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 538,
+   "city": "שעב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 539,
+   "city": "רומאנה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 540,
+   "city": "ריחאניה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 541,
+   "city": "ג'סר א-זרקא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 542,
+   "city": "ריינה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 543,
+   "city": "ראמה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 546,
+   "city": "עין אל-אסד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 547,
+   "city": "טמרה (יזרעאל)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 549,
+   "city": "גנות הדר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 553,
+   "city": "ניר בנים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 555,
+   "city": "שדמה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 559,
+   "city": "בוסתן הגליל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 562,
+   "city": "בית אלעזרי",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 563,
+   "city": "משמר דוד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 564,
+   "city": "רבדים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 565,
+   "city": "אזור",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 566,
+   "city": "גבעת שמש",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 567,
+   "city": "צרעה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 569,
+   "city": "כפר יבנה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 570,
+   "city": "מעונה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 571,
+   "city": "בית גמליאל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 572,
+   "city": "בית העמק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 573,
+   "city": "מבקיעים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 574,
+   "city": "גשר הזיו",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 575,
+   "city": "יסעור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 576,
+   "city": "כברי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 577,
+   "city": "יד בנימין",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 578,
+   "city": "סאסא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 579,
+   "city": "ראש הנקרה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 580,
+   "city": "כרם מהר\"ל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 582,
+   "city": "כפר הנגיד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 584,
+   "city": "זיקים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 585,
+   "city": "לביא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 586,
+   "city": "מגידו",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 587,
+   "city": "סביון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 588,
+   "city": "בני ראם",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 589,
+   "city": "בצת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 590,
+   "city": "נווה אור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 591,
+   "city": "עשרת",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 592,
+   "city": "בני דרום",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 593,
+   "city": "ערוגות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 594,
+   "city": "צפריה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 595,
+   "city": "לוחמי הגיטאות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 596,
+   "city": "מלכיה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 597,
+   "city": "פלמחים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 598,
+   "city": "בית קמה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 599,
+   "city": "פרוד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 602,
+   "city": "נירים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 603,
+   "city": "אלקוש",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 604,
+   "city": "בית עריף",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 605,
+   "city": "כפר שמאי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 606,
+   "city": "מזור",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 607,
+   "city": "מירון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 609,
+   "city": "ספסופה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 610,
+   "city": "סתריה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 612,
+   "city": "צרופה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 613,
+   "city": "ציפורי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 614,
+   "city": "שומרה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 615,
+   "city": "קדרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 616,
+   "city": "רינתיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 617,
+   "city": "ברקאי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 618,
+   "city": "חדיד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 619,
+   "city": "בית גוברין",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 620,
+   "city": "משואות יצחק",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 622,
+   "city": "עין צורים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 623,
+   "city": "יראון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 627,
+   "city": "ג'לג'וליה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 628,
+   "city": "ג'ת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 633,
+   "city": "כפר ברא",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 634,
+   "city": "כפר קאסם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 635,
+   "city": "מוקייבלה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 636,
+   "city": "צנדלה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 637,
+   "city": "ערערה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 638,
+   "city": "קלנסווה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 639,
+   "city": "ברטעה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 640,
+   "city": "זלפה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 642,
+   "city": "מוצמוץ",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 643,
+   "city": "מועאוויה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 644,
+   "city": "סאלם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 645,
+   "city": "מושיירפה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 648,
+   "city": "מצר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 649,
+   "city": "מייסר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 652,
+   "city": "איבטין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 654,
+   "city": "כפר קרע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 657,
+   "city": "עין א-סהלה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 658,
+   "city": "שיח' דנון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 661,
+   "city": "שער אפרים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 662,
+   "city": "חוסן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 663,
+   "city": "טירת יהודה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 664,
+   "city": "כרם בן זמרה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 665,
+   "city": "תקומה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 666,
+   "city": "עומר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 667,
+   "city": "ברעם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 668,
+   "city": "מפלסים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 670,
+   "city": "משמר איילון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 672,
+   "city": "בית נקופה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 673,
+   "city": "כפר טרומן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 674,
+   "city": "לימן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 675,
+   "city": "הבונים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 676,
+   "city": "עין השלושה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 677,
+   "city": "הסוללים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 678,
+   "city": "מעגן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 679,
+   "city": "אביאל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 680,
+   "city": "אומץ",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 681,
+   "city": "גבעת שמואל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 682,
+   "city": "אליקים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 683,
+   "city": "גבע כרמל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 684,
+   "city": "היוגב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 685,
+   "city": "בניה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 686,
+   "city": "נווה ימין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 687,
+   "city": "עין איילה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 688,
+   "city": "עלמה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 689,
+   "city": "מגדים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 690,
+   "city": "כפר אחים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 692,
+   "city": "שפיר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 693,
+   "city": "נתיב הל\"ה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 694,
+   "city": "מעגן מיכאל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 695,
+   "city": "מגן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 696,
+   "city": "כפר חב\"ד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 697,
+   "city": "בארותיים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 698,
+   "city": "בורגתה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 699,
+   "city": "ניר ישראל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 700,
+   "city": "חצב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 701,
+   "city": "ארבל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 702,
+   "city": "האון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 703,
+   "city": "גבעת עוז",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 705,
+   "city": "נחשונים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 706,
+   "city": "גיאה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 707,
+   "city": "כפר דניאל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 708,
+   "city": "עמקה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 709,
+   "city": "תפרח",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 710,
+   "city": "בית זית",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 711,
+   "city": "עזריה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 712,
+   "city": "בן עמי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 713,
+   "city": "רעים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 714,
+   "city": "ארז",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 715,
+   "city": "להבות חביבה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 716,
+   "city": "אייל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 717,
+   "city": "חגור",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 718,
+   "city": "ירחיב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 719,
+   "city": "תל קציר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 720,
+   "city": "ניר גלים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 721,
+   "city": "שדה אילן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 722,
+   "city": "מגשימים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 723,
+   "city": "בית הגדי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 726,
+   "city": "הודיה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 727,
+   "city": "תלמי יחיאל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 729,
+   "city": "משמר השבעה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 730,
+   "city": "אליפלט",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 731,
+   "city": "מישר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 732,
+   "city": "משמר הירדן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 734,
+   "city": "גן יאשיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 735,
+   "city": "רמות מאיר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 736,
+   "city": "גילת",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 737,
+   "city": "עולש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 738,
+   "city": "דור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 739,
+   "city": "שדה עוזיהו",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 740,
+   "city": "אשתאול",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 741,
+   "city": "שואבה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 742,
+   "city": "מסילת ציון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 743,
+   "city": "כפר שמואל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 744,
+   "city": "תלמי יפה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 745,
+   "city": "גמזו",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 746,
+   "city": "ברכיה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 747,
+   "city": "בית שקמה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 748,
+   "city": "מסלול",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 749,
+   "city": "פטיש",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 750,
+   "city": "פדויים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 751,
+   "city": "בית מאיר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 752,
+   "city": "תעוז",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 753,
+   "city": "ינוב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 755,
+   "city": "גורן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 756,
+   "city": "בית עזרא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 757,
+   "city": "מצליח",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 758,
+   "city": "יד חנה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 759,
+   "city": "יציץ",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 760,
+   "city": "בן זכאי",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 761,
+   "city": "שובה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 762,
+   "city": "בטחה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 763,
+   "city": "שתולים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 764,
+   "city": "כפר מרדכי",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 765,
+   "city": "משגב דב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 766,
+   "city": "קוממיות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 767,
+   "city": "פורת",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 768,
+   "city": "כרמיה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 769,
+   "city": "ניר עציון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 771,
+   "city": "מבוא ביתר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 772,
+   "city": "אמונים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 773,
+   "city": "עמיקם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 774,
+   "city": "צוריאל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 775,
+   "city": "יד נתן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 776,
+   "city": "מחסיה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 777,
+   "city": "נחשון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 778,
+   "city": "תרום",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 779,
+   "city": "עמינדב",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 780,
+   "city": "אורה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 781,
+   "city": "גני יהודה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 783,
+   "city": "אבן ספיר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 784,
+   "city": "בית נחמיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 785,
+   "city": "אחיהוד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 786,
+   "city": "כפר זיתים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 787,
+   "city": "גבעת יערים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 788,
+   "city": "זיתן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 789,
+   "city": "רנן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 791,
+   "city": "משען",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 792,
+   "city": "נתיב השיירה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 793,
+   "city": "גבעתי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 794,
+   "city": "עגור",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 795,
+   "city": "יערה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 796,
+   "city": "צלפון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 797,
+   "city": "אחיעזר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 798,
+   "city": "יגל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 799,
+   "city": "זכריה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 800,
+   "city": "בית חנניה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 801,
+   "city": "חמד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 802,
+   "city": "גבעת כ\"ח",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 803,
+   "city": "יושיביה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 804,
+   "city": "אחיסמך",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 805,
+   "city": "ישעי",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 806,
+   "city": "עין יהב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 807,
+   "city": "חניאל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 808,
+   "city": "ניר אליהו",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 809,
+   "city": "נחם",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 810,
+   "city": "עופר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 811,
+   "city": "יכיני",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 812,
+   "city": "שלומי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 813,
+   "city": "עין יעקב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 814,
+   "city": "תלמים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 815,
+   "city": "זבדיאל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 816,
+   "city": "זנוח",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 817,
+   "city": "עזריקם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 818,
+   "city": "זרחיה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 819,
+   "city": "אביגדור",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 820,
+   "city": "חלץ",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 821,
+   "city": "אחוזם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 822,
+   "city": "מטע",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 823,
+   "city": "בר גיורא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 824,
+   "city": "כוכב מיכאל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 825,
+   "city": "נס הרים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 826,
+   "city": "עוזה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 827,
+   "city": "נווה מבטח",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 828,
+   "city": "ישרש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 829,
+   "city": "מבטחים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 831,
+   "city": "ירוחם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 833,
+   "city": "נורית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 836,
+   "city": "גנות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 837,
+   "city": "עזריאל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 838,
+   "city": "פדיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 839,
+   "city": "פתחיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 840,
+   "city": "כיסופים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 841,
+   "city": "אלישמע",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 842,
+   "city": "געש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 843,
+   "city": "מרגליות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 844,
+   "city": "נחל עוז",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 845,
+   "city": "כפר עזה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 846,
+   "city": "שפר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 848,
+   "city": "בית רבן",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 849,
+   "city": "דבירה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 850,
+   "city": "אחיטוב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 851,
+   "city": "ניצני עוז",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 852,
+   "city": "גונן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 853,
+   "city": "גאליה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 854,
+   "city": "רחוב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 856,
+   "city": "שעלבים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 857,
+   "city": "כפר אביב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 858,
+   "city": "נווה ירק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 859,
+   "city": "כסלון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 861,
+   "city": "שדה אליעזר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 862,
+   "city": "גני יוחנן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 863,
+   "city": "גינתון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 864,
+   "city": "בקוע",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 865,
+   "city": "שיבולים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 866,
+   "city": "יטבתה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 868,
+   "city": "אלוני יצחק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 870,
+   "city": "גבעת השלושה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 871,
+   "city": "עינת",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 872,
+   "city": "גאולי תימן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 873,
+   "city": "שלווה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 874,
+   "city": "מגדל העמק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 875,
+   "city": "כפר עבודה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 877,
+   "city": "בית חרות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 880,
+   "city": "עין שריד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 882,
+   "city": "אורנים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 883,
+   "city": "רמת פנקס",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 885,
+   "city": "שדה בוקר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 886,
+   "city": "איתנים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 888,
+   "city": "כפר הרי\"ף",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 889,
+   "city": "כפר חסידים ב'",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 890,
+   "city": "כפר הנוער הדתי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 892,
+   "city": "עבדון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 897,
+   "city": "מדרשת רופין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 913,
+   "city": "שיבלי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 916,
+   "city": "ישע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 917,
+   "city": "שגב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 919,
+   "city": "גבעת ישעיהו",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 921,
+   "city": "שער מנשה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 922,
+   "city": "רכסים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 926,
+   "city": "נווה אבות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 932,
+   "city": "אבו עמרה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 934,
+   "city": "ביידה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 935,
+   "city": "אבו סריחאן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 939,
+   "city": "מסעודין אל-עזאזמה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 942,
+   "city": "סואעד (חמרייה)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 944,
+   "city": "בסמת טבעון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 948,
+   "city": "חוג'ייראה (ד'הרה)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 953,
+   "city": "נוג'ידאת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 956,
+   "city": "הוזייל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 957,
+   "city": "עוקבי (בנו עוקבה)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 958,
+   "city": "אבו עבדון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 959,
+   "city": "אפיניש",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 960,
+   "city": "אסד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 961,
+   "city": "אבו רוקייק",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 962,
+   "city": "טובא - זנגריה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 963,
+   "city": "אעצם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 964,
+   "city": "קודייראת א-צאנע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 965,
+   "city": "אטרש",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 966,
+   "city": "אבו רובייעה(שבט)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 967,
+   "city": "אבו ג'ווייעד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 968,
+   "city": "אבו קורינאת (שבט)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 969,
+   "city": "עטאוונה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 970,
+   "city": "תראבין א-צאנע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 972,
+   "city": "קוואעין",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 975,
+   "city": "זרזיר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 976,
+   "city": "ג'נאביב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 977,
+   "city": "חג'אג'רה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 978,
+   "city": "כעביה-טבאש",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 986,
+   "city": "ח'ואלד (שבט)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 989,
+   "city": "סואעד (כמאנה)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 990,
+   "city": "ראס עלי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 993,
+   "city": "חמאם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 994,
+   "city": "מנשית זברה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 997,
+   "city": "רומת הייב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 998,
+   "city": "ביר אל-מכסור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 999,
+   "city": "זובידאת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1015,
+   "city": "מבשרת ציון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1020,
+   "city": "אור עקיבא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1024,
+   "city": "חרוצים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1031,
+   "city": "שדרות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1034,
+   "city": "קרית מלאכי",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1041,
+   "city": "נצאצרה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1042,
+   "city": "אבו עמאר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1043,
+   "city": "גיזו",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1044,
+   "city": "יעף",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1045,
+   "city": "שתולה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1046,
+   "city": "אוהד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1047,
+   "city": "חזון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1048,
+   "city": "אפעל סמינר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1049,
+   "city": "רמת אפעל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1050,
+   "city": "בית חשמונאי",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1051,
+   "city": "תלמי אליהו",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1052,
+   "city": "קטורה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1053,
+   "city": "עין חצבה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1054,
+   "city": "תל שבע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1056,
+   "city": "עין כרם - ביס חקלאי",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1057,
+   "city": "נווה זוהר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1058,
+   "city": "שדה ניצן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1059,
+   "city": "כסיפה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1060,
+   "city": "לקיה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1061,
+   "city": "נצרת עילית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1062,
+   "city": "נווה אפרים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1063,
+   "city": "מעלות-תרשיחא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1064,
+   "city": "אמירים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1065,
+   "city": "זמרת",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1066,
+   "city": "בני עייש",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1067,
+   "city": "דוב\"ב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1068,
+   "city": "אדמית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1069,
+   "city": "רם-און",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1070,
+   "city": "אביעזר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1071,
+   "city": "נווה מיכאל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1072,
+   "city": "גן הדרום",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1076,
+   "city": "בית ברל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1077,
+   "city": "גבעת שפירא",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1079,
+   "city": "צפרירים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1080,
+   "city": "מבועים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1081,
+   "city": "אבן מנחם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1082,
+   "city": "מעגלים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1083,
+   "city": "תושיה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1084,
+   "city": "בן שמן (כפר נוער)",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1085,
+   "city": "כרם שלום",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1094,
+   "city": "כרם יבנה (ישיבה)",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1095,
+   "city": "כפר מימון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1098,
+   "city": "מרכז שפירא",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1102,
+   "city": "צוקי ים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1103,
+   "city": "גני הדר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1104,
+   "city": "פוריה - כפר עבודה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1105,
+   "city": "פוריה - נווה עובד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1106,
+   "city": "שערי אברהם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1108,
+   "city": "אומן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1110,
+   "city": "חבר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1111,
+   "city": "צופיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1112,
+   "city": "יודפת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1113,
+   "city": "צור הדסה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1114,
+   "city": "שריגים (לי-און)",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1115,
+   "city": "אביבים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1117,
+   "city": "יעל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1120,
+   "city": "אוהלן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1123,
+   "city": "אדרת",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1124,
+   "city": "נאות הכיכר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1125,
+   "city": "אלמגור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1126,
+   "city": "אילות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1127,
+   "city": "מעלה גלבוע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1128,
+   "city": "מי עמי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1129,
+   "city": "גרופית",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1130,
+   "city": "כפר רוזנואלד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1132,
+   "city": "שניר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1133,
+   "city": "ורדון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1134,
+   "city": "יד השמונה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1136,
+   "city": "צוחר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1137,
+   "city": "קרית יערים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1138,
+   "city": "יעד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1139,
+   "city": "כרמיאל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1140,
+   "city": "מדרשת בן גוריון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1141,
+   "city": "מבוא מודיעים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1143,
+   "city": "נס עמים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1144,
+   "city": "ידידה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1145,
+   "city": "אלומה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1146,
+   "city": "עלומים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1147,
+   "city": "נטועה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1148,
+   "city": "צור נתן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1149,
+   "city": "עזר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1150,
+   "city": "צופר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1151,
+   "city": "פארן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1152,
+   "city": "אשלים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1153,
+   "city": "כישור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1154,
+   "city": "מלכישוע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1155,
+   "city": "מגן שאול",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1156,
+   "city": "סמר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1157,
+   "city": "אחווה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1158,
+   "city": "יהל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1160,
+   "city": "שכניה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1161,
+   "city": "רהט",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1162,
+   "city": "בית רימון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1163,
+   "city": "מורן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1165,
+   "city": "שילת",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1166,
+   "city": "כפר רות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1167,
+   "city": "קיסריה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1169,
+   "city": "הוואשלה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1170,
+   "city": "סייד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1171,
+   "city": "לוטם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1172,
+   "city": "תובל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1173,
+   "city": "לפידות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1174,
+   "city": "מנוף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1175,
+   "city": "עידן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1176,
+   "city": "ספיר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1177,
+   "city": "טללים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1178,
+   "city": "מורשת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1179,
+   "city": "קורנית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1180,
+   "city": "צביה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1181,
+   "city": "טל-אל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1182,
+   "city": "אלון הגליל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1183,
+   "city": "כליל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1184,
+   "city": "מתת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1185,
+   "city": "פלך",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1186,
+   "city": "הושעיה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1187,
+   "city": "עיר אובות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1188,
+   "city": "אשחר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1190,
+   "city": "מצפה נטופה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1191,
+   "city": "בר יוחאי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1192,
+   "city": "ערערה-בנגב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1195,
+   "city": "ניצנה (ק. חינוך)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1196,
+   "city": "מחנה יתיר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1197,
+   "city": "נאות סמדר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1198,
+   "city": "כרמים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1199,
+   "city": "עדי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1200,
+   "city": "מודיעין",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1201,
+   "city": "כמון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1202,
+   "city": "מכמנים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1203,
+   "city": "הררית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1204,
+   "city": "גילון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1205,
+   "city": "מנות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1206,
+   "city": "גיתה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1207,
+   "city": "לבון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1208,
+   "city": "הילה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1209,
+   "city": "חרשים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1210,
+   "city": "כחל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1211,
+   "city": "קדרים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1212,
+   "city": "עמוקה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1213,
+   "city": "צבעון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1214,
+   "city": "טפחות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1217,
+   "city": "מחנה יבור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1219,
+   "city": "גורנות הגליל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1220,
+   "city": "אבירים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1221,
+   "city": "צורית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1222,
+   "city": "מצפה אבי\"ב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1223,
+   "city": "שדי אברהם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1224,
+   "city": "כוכב יאיר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1225,
+   "city": "רביד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1226,
+   "city": "יובלים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1227,
+   "city": "יתד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1228,
+   "city": "רקפת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1229,
+   "city": "כלנית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1230,
+   "city": "לבנים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1231,
+   "city": "פרי גן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1232,
+   "city": "יבול",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1233,
+   "city": "שקף",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1234,
+   "city": "קבועה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1235,
+   "city": "שורשים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1236,
+   "city": "נירית",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1237,
+   "city": "תלמי יוסף",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1238,
+   "city": "סופה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1239,
+   "city": "חולית",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1240,
+   "city": "עין הבשור",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1241,
+   "city": "דקל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1242,
+   "city": "נתיב העשרה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1243,
+   "city": "קציר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1244,
+   "city": "תמרת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1245,
+   "city": "סלמה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1246,
+   "city": "עראמשה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1247,
+   "city": "חריש",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1248,
+   "city": "אליפז",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1249,
+   "city": "הרדוף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1251,
+   "city": "עין תמר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1252,
+   "city": "כורזים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1253,
+   "city": "אמנון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1254,
+   "city": "נטף",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1255,
+   "city": "לוטן",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1256,
+   "city": "אשרת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1257,
+   "city": "חנתון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1258,
+   "city": "מסד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1259,
+   "city": "נווה שלום",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1260,
+   "city": "רתמים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1261,
+   "city": "הר עמשא",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1262,
+   "city": "צוקים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1263,
+   "city": "כפר ורדים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1264,
+   "city": "כרמי יוסף",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1265,
+   "city": "שומריה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1266,
+   "city": "שחרות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1267,
+   "city": "שיטים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1268,
+   "city": "מיתר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1269,
+   "city": "יעלון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1271,
+   "city": "להבים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1272,
+   "city": "חלוץ",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1273,
+   "city": "מכבים-רעות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1274,
+   "city": "גן נר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1275,
+   "city": "אבטליון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1276,
+   "city": "אשבל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1277,
+   "city": "נח\"ל אמתי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1278,
+   "city": "באר מילכה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1279,
+   "city": "נווה חריף",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1280,
+   "city": "ניצני סיני",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1282,
+   "city": "מירב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1283,
+   "city": "תל תאומים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1284,
+   "city": "נופית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1285,
+   "city": "כרכום",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1286,
+   "city": "שגב שלום",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1287,
+   "city": "שני",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1288,
+   "city": "גבעת אלה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1290,
+   "city": "זמר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1291,
+   "city": "כמהין",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1292,
+   "city": "ג'דיידה-מכר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1293,
+   "city": "גבעת אבני",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1294,
+   "city": "אור הגנוז",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1295,
+   "city": "יאנוח-ג'ת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1296,
+   "city": "כסרא-סמיע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1297,
+   "city": "כפר חנניה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1298,
+   "city": "אתגר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1299,
+   "city": "שעורים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1303,
+   "city": "חורה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1304,
+   "city": "שוהם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1306,
+   "city": "צור יגאל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1308,
+   "city": "צורן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1309,
+   "city": "אלעד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1310,
+   "city": "לפיד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1311,
+   "city": "אבשלום",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1313,
+   "city": "פוריה עילית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1314,
+   "city": "נווה זיו",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1315,
+   "city": "מתן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1316,
+   "city": "אל-עריאן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1317,
+   "city": "דמיידה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1318,
+   "city": "מבואות ים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1319,
+   "city": "בת חפר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1320,
+   "city": "עין חוד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1321,
+   "city": "ח'ואלד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1322,
+   "city": "הודיות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1323,
+   "city": "בת הדר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1324,
+   "city": "ארסוף",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1325,
+   "city": "כפר זוהרים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1326,
+   "city": "בסמ\"ה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1327,
+   "city": "מעלה עירון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1328,
+   "city": "נח\"ל סנסנה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1329,
+   "city": "נח\"ל יתיר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1330,
+   "city": "אחוזת ברק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1331,
+   "city": "כמאנה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1332,
+   "city": "חוסנייה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1333,
+   "city": "נוף איילון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1334,
+   "city": "ראס אל-עין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1335,
+   "city": "ערב אל נעים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1337,
+   "city": "שמשית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1338,
+   "city": "כדיתה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1339,
+   "city": "אל-עזי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1340,
+   "city": "מרחב עם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1342,
+   "city": "אבו קורינאת (יישוב)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1343,
+   "city": "מכחול",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1344,
+   "city": "גבעות בר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1345,
+   "city": "צור יצחק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1346,
+   "city": "תראבין א-צאנע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1347,
+   "city": "קאצר א-סר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1348,
+   "city": "ביר הדאג'",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1349,
+   "city": "דריג'את",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1358,
+   "city": "אום כף אום בטין",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1359,
+   "city": "א סייד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1360,
+   "city": "מולדה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1361,
+   "city": "בת חן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1363,
+   "city": "בני נצרים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1364,
+   "city": "שלומית",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1365,
+   "city": "אליאב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1366,
+   "city": "נוה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1367,
+   "city": "כחלה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1369,
+   "city": "נטע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1370,
+   "city": "מצפה אילן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1371,
+   "city": "גני טל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1372,
+   "city": "נצר חזני",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1374,
+   "city": "גרמי קטיף",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1375,
+   "city": "אבו תלול",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1376,
+   "city": "באר גנים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1401,
+   "city": "בת חצור",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1402,
+   "city": "חצרות חולדה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1403,
+   "city": "חצרות חפר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1404,
+   "city": "חצרות יסף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1405,
+   "city": "חצרות כ\"ח",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1409,
+   "city": "חצר בארותיים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1411,
+   "city": "מחנה הילה (פלמחים)",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1412,
+   "city": "מחנה תל-נוף",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1413,
+   "city": "מחה יהודית (רמת דוד)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1414,
+   "city": "מחנה מרים (חצור)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1415,
+   "city": "מחנה יפה (חצרים)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1416,
+   "city": "מחנה יוכבד (עובדה)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1417,
+   "city": "מחנה עדי (מחנה נבטים)",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1418,
+   "city": "מחנה טלי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1419,
+   "city": "ניצו ב'",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1701,
+   "city": "מפעלי נחם הר טוב",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 1705,
+   "city": "מרכז כ\"ח",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1706,
+   "city": "מפעלי גליל עליון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1707,
+   "city": "תל חי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1708,
+   "city": "מרכז אזורי מרום הגליל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1709,
+   "city": "תעשיון דלתון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1711,
+   "city": "מפעלי צמח",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1712,
+   "city": "בית חולים פוריה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1713,
+   "city": "מרכז אזורי כדורי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1714,
+   "city": "תעשיון גליל תחתון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1716,
+   "city": "אלון תבור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1717,
+   "city": "מפעלי העמק (יזרעל)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1719,
+   "city": "מפעלי שאן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1722,
+   "city": "מגדל תפן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1723,
+   "city": "מרכז אזורי משגב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1724,
+   "city": "תרדיון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1726,
+   "city": "אזור תעשייה אכזיב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1727,
+   "city": "אזור תעשייה נעמן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1728,
+   "city": "תעשיון בר-לב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1729,
+   "city": "פארק תעשיה חבל מודיעים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1736,
+   "city": "בתי זיקוק קישון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1739,
+   "city": "מפעלי גרנות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1740,
+   "city": "גבעת חביבה (מרכז חינוך)",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 1741,
+   "city": "תעשיות השרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1742,
+   "city": "תעשיון חצב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1744,
+   "city": "תעשיון בנימין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1745,
+   "city": "מפעלי חפר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1747,
+   "city": "מרכז שוהם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1748,
+   "city": "נמל תעופה בן גוריון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1749,
+   "city": "תעשיון צריפין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1750,
+   "city": "תעשיון חוף יבנה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1751,
+   "city": "המרכז למחקר גרעיני נחל שורק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1753,
+   "city": "מפעלי כנות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1754,
+   "city": "תעשיון מבצע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1755,
+   "city": "תעשיון ראם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1756,
+   "city": "מפעלי צומת מלאכי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1759,
+   "city": "א.ת. מפעלי כנות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1762,
+   "city": "עד הלום",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1763,
+   "city": "תעשיות ספירים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1766,
+   "city": "קרית חינוך עזתה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1767,
+   "city": "מפעלי אבשלום",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1768,
+   "city": "קרית חינוך מרחבים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1769,
+   "city": "מפעלי מעון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1770,
+   "city": "רמת חובב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1772,
+   "city": "ים המלח בתי מלון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1773,
+   "city": "מפעלי רותם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1775,
+   "city": "מפעלי ים המלח",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1776,
+   "city": "מפעלי צין - ערבה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1777,
+   "city": "א.ת. פארק ת.מ.ד.",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 1791,
+   "city": "מפעלי ברקן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1792,
+   "city": "תעשיון שח\"ק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 1793,
+   "city": "שלומציון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2002,
+   "city": "תנובות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2003,
+   "city": "תלמי אלעזר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2006,
+   "city": "כנות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 2008,
+   "city": "שדה יצחק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2009,
+   "city": "יובל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2010,
+   "city": "כפר בן נון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2011,
+   "city": "ינון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2012,
+   "city": "אורות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2013,
+   "city": "בן שמן (מושב)",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2014,
+   "city": "גבעולים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2015,
+   "city": "שדי חמד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2016,
+   "city": "רוויה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2018,
+   "city": "גבעת חיים (איחוד)",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2021,
+   "city": "אשל הנשיא",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2023,
+   "city": "להב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2024,
+   "city": "אום אל-קוטוף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2026,
+   "city": "ירדנה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2029,
+   "city": "מדרך עוז",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2030,
+   "city": "מנוחה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2032,
+   "city": "נוה אפעל (אפעל - בית אבות)",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2033,
+   "city": "בית חלקיה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2034,
+   "city": "חצור הגלילית",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2035,
+   "city": "עדנים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2038,
+   "city": "ברקת",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2039,
+   "city": "קריית יערים (מוסד)",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 2042,
+   "city": "עין גדי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2043,
+   "city": "בחן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2044,
+   "city": "מלילות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2045,
+   "city": "נחלה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2046,
+   "city": "סגולה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2047,
+   "city": "ניר משה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2048,
+   "city": "ניר עקיבא",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2049,
+   "city": "שדה צבי",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2050,
+   "city": "תלמי ביל\"ו",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2051,
+   "city": "רווחה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2052,
+   "city": "אביטל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2053,
+   "city": "פרזון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2054,
+   "city": "מיטב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2055,
+   "city": "מאור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2057,
+   "city": "שדי תרומות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2059,
+   "city": "פעמי תש\"ז",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2060,
+   "city": "ברוש",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2061,
+   "city": "תדהר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2062,
+   "city": "תאשור",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2063,
+   "city": "דישון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2064,
+   "city": "זרועה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2100,
+   "city": "טירת הכרמל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2200,
+   "city": "דימונה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2300,
+   "city": "קרית טבעון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2400,
+   "city": "אור יהודה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2500,
+   "city": "נשר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2530,
+   "city": "באר יעקב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2550,
+   "city": "גדרה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2560,
+   "city": "ערד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2600,
+   "city": "אילת",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2610,
+   "city": "בית שמש",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 2620,
+   "city": "קרית אונו",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2630,
+   "city": "קרית גת",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 2640,
+   "city": "ראש העין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2650,
+   "city": "רמת השרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2660,
+   "city": "יבנה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2710,
+   "city": "אום אל-פחם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 2720,
+   "city": "טירה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2730,
+   "city": "טייבה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 2742,
+   "city": "זבארגה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 2800,
+   "city": "קרית שמונה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 3000,
+   "city": "ירושלים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3001,
+   "city": "אבו דיס",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3058,
+   "city": "בית איכסא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3062,
+   "city": "בית ענאן",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3063,
+   "city": "בית ג'אלא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3067,
+   "city": "בית חנינה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3100,
+   "city": "אלבירה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3103,
+   "city": "בתיר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3299,
+   "city": "אלחדר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3400,
+   "city": "חברון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3488,
+   "city": "כפר עציון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3489,
+   "city": "כפר עקב",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3555,
+   "city": "נתיב הגדוד",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3556,
+   "city": "אלמוג",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3557,
+   "city": "קדומים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3558,
+   "city": "תומר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3560,
+   "city": "אלקנה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3561,
+   "city": "מגדל עוז",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3563,
+   "city": "תקוע",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3564,
+   "city": "כוכב השחר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3565,
+   "city": "רימונים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3566,
+   "city": "יפית",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3567,
+   "city": "סלעית",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3568,
+   "city": "ריחן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3569,
+   "city": "מבוא דותן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3570,
+   "city": "אריאל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3571,
+   "city": "שבי שומרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3572,
+   "city": "כפר תפוח",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3573,
+   "city": "חלמיש",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3574,
+   "city": "בית אל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3575,
+   "city": "בית חורון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3576,
+   "city": "מצפה יריחו",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3578,
+   "city": "שדמות מחולה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3579,
+   "city": "אלון מורה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3598,
+   "city": "ארגמן",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3599,
+   "city": "מחולה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3601,
+   "city": "קליה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3602,
+   "city": "ראש צורים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3603,
+   "city": "הר גילה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3604,
+   "city": "אלון שבות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3605,
+   "city": "משואה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3606,
+   "city": "גלגל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3607,
+   "city": "ייט\"ב",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3608,
+   "city": "מעלה אפרים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3609,
+   "city": "חמרה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3610,
+   "city": "מצפה שלם",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3611,
+   "city": "קרית ארבע",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3612,
+   "city": "בקעות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3613,
+   "city": "גיתית",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3614,
+   "city": "מכורה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3615,
+   "city": "פצאל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3616,
+   "city": "מעלה אדומים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3617,
+   "city": "עופרה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3618,
+   "city": "אלעזר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3619,
+   "city": "רועי",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3620,
+   "city": "נירן",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3637,
+   "city": "מעלה שומרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3638,
+   "city": "כפר אדומים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3639,
+   "city": "ורד יריחו",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3640,
+   "city": "קרני שומרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3641,
+   "city": "שילה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3642,
+   "city": "חומש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3643,
+   "city": "חיננית",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3644,
+   "city": "גבעון החדשה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3645,
+   "city": "בית הערבה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3646,
+   "city": "נח\"ל חמדת",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3647,
+   "city": "יקיר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3648,
+   "city": "מתתיהו",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3649,
+   "city": "שקד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3650,
+   "city": "אפרתה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3651,
+   "city": "מעלה מכמש",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3652,
+   "city": "בית אריה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3653,
+   "city": "מעלה עמוס",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3654,
+   "city": "ברקן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3655,
+   "city": "ניל\"י",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3656,
+   "city": "כרמל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3657,
+   "city": "מעון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3658,
+   "city": "עטרת",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3659,
+   "city": "פסגות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3660,
+   "city": "עמנואל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3677,
+   "city": "עיזריה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3690,
+   "city": "ענאתא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3709,
+   "city": "מבוא חורון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3710,
+   "city": "ברכה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3711,
+   "city": "שא-נור",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3712,
+   "city": "ענב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3713,
+   "city": "נעמי",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3714,
+   "city": "בית אל ב'",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3715,
+   "city": "עלמון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3717,
+   "city": "חרמש",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3718,
+   "city": "נח\"ל אלישע",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3719,
+   "city": "תלם",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3720,
+   "city": "שערי תקוה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3722,
+   "city": "אשכולות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3723,
+   "city": "פני חבר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3724,
+   "city": "נגוהות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3725,
+   "city": "נווה דניאל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3726,
+   "city": "נוקדים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3727,
+   "city": "עלי זהב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3729,
+   "city": "כדים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3730,
+   "city": "גבעת זאב",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3743,
+   "city": "טנא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3744,
+   "city": "ברוכין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3745,
+   "city": "מצדות יהודה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3746,
+   "city": "קרית נטפים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3747,
+   "city": "דולב",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3748,
+   "city": "עתניאל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3749,
+   "city": "יצהר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3750,
+   "city": "אלפי מנשה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3751,
+   "city": "מגדלים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3752,
+   "city": "מעלה לבונה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3753,
+   "city": "נח\"ל עין חגלה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3754,
+   "city": "אספר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3756,
+   "city": "סוסיה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3758,
+   "city": "גנים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3759,
+   "city": "אדורה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3760,
+   "city": "אורנית",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3762,
+   "city": "איתמר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3763,
+   "city": "גבע בנימין",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3764,
+   "city": "חגי",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3765,
+   "city": "עלי",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3766,
+   "city": "כרמי צור",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3767,
+   "city": "נחליאל",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3768,
+   "city": "פדואל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3769,
+   "city": "הר אדר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3770,
+   "city": "חשמונאים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3777,
+   "city": "סנסנה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 3778,
+   "city": "עץ אפרים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3779,
+   "city": "כוכב יעקב",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3780,
+   "city": "ביתר עילית",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3781,
+   "city": "קדר",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3782,
+   "city": "נח\"ל רותם",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3783,
+   "city": "נח\"ל גבעות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3784,
+   "city": "שמעה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3785,
+   "city": "נח\"ל משכיות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3786,
+   "city": "נח\"ל אבנת",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3787,
+   "city": "נעלה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3788,
+   "city": "טלמון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3790,
+   "city": "נופים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3791,
+   "city": "צופין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3792,
+   "city": "עופרים",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3793,
+   "city": "אבני חפץ",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3794,
+   "city": "בת עין",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3795,
+   "city": "רבבה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3796,
+   "city": "מנורה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3797,
+   "city": "מודיעין עילית",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3800,
+   "city": "רמאללה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3809,
+   "city": "קלנדיה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3822,
+   "city": "רחלים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3823,
+   "city": "גני מודיעין",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3841,
+   "city": "ראבא",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3843,
+   "city": "אלראם",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3849,
+   "city": "ראפאת (שומרון)",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3850,
+   "city": "ראפאת (יהודה)",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3852,
+   "city": "רוג'ייב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3857,
+   "city": "רנתיס",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3858,
+   "city": "רפידא",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3882,
+   "city": "שוויכה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3883,
+   "city": "שופה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3888,
+   "city": "שוקבא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3900,
+   "city": "שכם",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3911,
+   "city": "תיאסיר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3916,
+   "city": "תלפית",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 3920,
+   "city": "תורמוס עייא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 3921,
+   "city": "תרקומיא",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 4000,
+   "city": "חיפה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4001,
+   "city": "בוקעאתה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4002,
+   "city": "אלי על",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4003,
+   "city": "אל-רום",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4004,
+   "city": "כפר חרוב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4005,
+   "city": "חספין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4006,
+   "city": "קשת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4007,
+   "city": "יונתן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4008,
+   "city": "מעלה גמלא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4009,
+   "city": "שעל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4010,
+   "city": "אודם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4011,
+   "city": "אבני איתן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4012,
+   "city": "אניעם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4013,
+   "city": "אורטל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4014,
+   "city": "נטור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4015,
+   "city": "בני יהודה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4017,
+   "city": "אלוני הבשן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4019,
+   "city": "מיצר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4021,
+   "city": "גבעת יואב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4022,
+   "city": "גשור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4023,
+   "city": "נח\"ל נימרוד",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4024,
+   "city": "קלע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4025,
+   "city": "קדמת צבי",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4026,
+   "city": "חד-נס",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4028,
+   "city": "כנף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4100,
+   "city": "קצרין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4101,
+   "city": "מרום גולן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4201,
+   "city": "מג'דל שמס",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4203,
+   "city": "מסעדה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4204,
+   "city": "מבוא חמה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4301,
+   "city": "אפיק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4303,
+   "city": "נווה אטי\"ב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4304,
+   "city": "נוב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4501,
+   "city": "ע'ג'ר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4502,
+   "city": "עין קנייא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4503,
+   "city": "עין זיוון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4551,
+   "city": "נאות גולן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4701,
+   "city": "רמת מגשימים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 4702,
+   "city": "רמות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 5000,
+   "city": "תל-אביב",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 5405,
+   "city": "כפר דרום",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5407,
+   "city": "מורג",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5408,
+   "city": "נצרים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5410,
+   "city": "נצר חזני",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5423,
+   "city": "קטיף",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5424,
+   "city": "גני טל",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5425,
+   "city": "בני עצמון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5426,
+   "city": "ניסנית",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5427,
+   "city": "נווה דקלים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5428,
+   "city": "אלי סיני",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5429,
+   "city": "גדיד",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5431,
+   "city": "גן אור",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5432,
+   "city": "בדולח",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5433,
+   "city": "רפיח ים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5434,
+   "city": "שליו",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5435,
+   "city": "דוגית",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5436,
+   "city": "פאת שדה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 5800,
+   "city": "רפיח",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 6000,
+   "city": "באקה אל-גרביה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 6100,
+   "city": "בני ברק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 6200,
+   "city": "בת ים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 6300,
+   "city": "גבעתיים",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 6400,
+   "city": "הרצליה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 6500,
+   "city": "חדרה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 6600,
+   "city": "חולון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 6700,
+   "city": "טבריה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 6800,
+   "city": "קרית אתא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 6900,
+   "city": "כפר סבא",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 7000,
+   "city": "לוד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 7100,
+   "city": "אשקלון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 7200,
+   "city": "נס ציונה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 7300,
+   "city": "נצרת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 7400,
+   "city": "נתניה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 7500,
+   "city": "סח'נין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 7600,
+   "city": "עכו",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 7700,
+   "city": "עפולה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 7800,
+   "city": "פרדס חנה-כרכור",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 7900,
+   "city": "פתח תקוה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 8000,
+   "city": "צפת",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 8200,
+   "city": "קרית מוצקין",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 8201,
+   "city": "קרית חיים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 8300,
+   "city": "ראשון לציון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 8400,
+   "city": "רחובות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 8500,
+   "city": "רמלה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 8600,
+   "city": "רמת גן",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 8700,
+   "city": "רעננה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 8800,
+   "city": "שפרעם",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 8900,
+   "city": "טמרה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9000,
+   "city": "באר שבע",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9100,
+   "city": "נהריה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9200,
+   "city": "בית שאן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9300,
+   "city": "זכרון יעקב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9400,
+   "city": "יהוד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9494,
+   "city": "דאלית אל-כרמל - עספיא",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9500,
+   "city": "קרית ביאליק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9600,
+   "city": "קרית ים",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9700,
+   "city": "הוד השרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9800,
+   "city": "בינימינה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9901,
+   "city": "מ.א. הגליל העליון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9902,
+   "city": "מ.א. מרום הגליל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9903,
+   "city": "מ.א. הגליל התחתון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9904,
+   "city": "מ.א. מטה אשר",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9906,
+   "city": "מ.א. עמק הירדן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9907,
+   "city": "מ.א. בקעת בית שאן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9908,
+   "city": "מ.א. הגלבוע",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9909,
+   "city": "מ.א. עמק יזרעאל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9912,
+   "city": "מ.א. זבולון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9913,
+   "city": "מ.א. מגידו",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9914,
+   "city": "מ.א. מנשה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9915,
+   "city": "מ.א. חוף הכרמל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9916,
+   "city": "מ.א. עמק חפר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9918,
+   "city": "מ.א. לב השרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9919,
+   "city": "מ.א. חוף השרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9920,
+   "city": "מ.א. דרום השרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9924,
+   "city": "מ.א. אפעל",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9925,
+   "city": "מ.א. חבל מודיעין",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9926,
+   "city": "מ.א. מטה יהודה",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 9927,
+   "city": "מ.א. גן רוה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9928,
+   "city": "מ.א. ברנר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9929,
+   "city": "מ.א. חבל יבנה",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9930,
+   "city": "מ.א. גזר",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9931,
+   "city": "מ.א. נחל שורק",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9932,
+   "city": "מ.א. גדרות",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9933,
+   "city": "מ.א. באר טוביה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9934,
+   "city": "מ.א. שפיר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9935,
+   "city": "מ.א. יואב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9936,
+   "city": "מ.א. חוף אשקלון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9937,
+   "city": "מ.א. שער הנגב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9938,
+   "city": "מ.א. אשכול",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9939,
+   "city": "מ.א. שדות נגב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9940,
+   "city": "מ.א. עמק לוד",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9941,
+   "city": "מ.א. בני שמעון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9942,
+   "city": "מ.א. מרחבים",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9945,
+   "city": "מ.א. אלונה",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9948,
+   "city": "מ.א. רמת נגב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9950,
+   "city": "מ.א. לכיש",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9951,
+   "city": "מ.א. תמר",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9952,
+   "city": "מ.א. מעלה יוסף",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9953,
+   "city": "מ.א. חבל אילות",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9954,
+   "city": "מ.א. ערבה תיכונה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9955,
+   "city": "מ.א. מבואות החרמון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9956,
+   "city": "מ.א. משגב",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9961,
+   "city": "מ.א. משוש",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9962,
+   "city": "מ.א. שוקת",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9963,
+   "city": "מ.א. נוף הגליל",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9964,
+   "city": "מ.א. נחל עירון",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9971,
+   "city": "מ.א. גולן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9972,
+   "city": "מ.א. שומרון",
+   "district": "ת\"א והמרכז"
+  },
+  {
+   "citySymbol": 9973,
+   "city": "מ.א. מטה בנימין",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 9974,
+   "city": "מ.א. מגילות",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 9975,
+   "city": "מ.א. ערבות הירדן",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 9976,
+   "city": "מ.א. גוש עציון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 9977,
+   "city": "מ.א. חוף עזה",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9978,
+   "city": "מ.א. הר חברון",
+   "district": "ירושלים"
+  },
+  {
+   "citySymbol": 9990,
+   "city": "ישובי חבל מעון",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9991,
+   "city": "א. ת. מישור רותם",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9992,
+   "city": "אפא. ת. מחסום ארז",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9993,
+   "city": "מ.מ.ת. רמת חובב",
+   "district": "ב\"ש והדרום"
+  },
+  {
+   "citySymbol": 9994,
+   "city": "מ.מ.ת. מגדל תפן",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9995,
+   "city": "מרכז אזורי שח\"ק",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9996,
+   "city": "מרכז אזורי גרנות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9997,
+   "city": "א. ת. מילואות",
+   "district": "חיפה וצפון"
+  },
+  {
+   "citySymbol": 9998,
+   "city": "מרכז אזורי צמח",
+   "district": "חיפה וצפון"
+  }
+ ]
+}
