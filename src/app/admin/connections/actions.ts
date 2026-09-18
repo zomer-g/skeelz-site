@@ -4,7 +4,7 @@ import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { writeAudit } from "@/lib/audit";
 import { requireUser } from "@/lib/auth/session";
-import { cleanBaseUrl, fetchWith, PEERS, PeerError, resolveConnection, type SitePeer } from "@/lib/connect/client";
+import { checkBaseUrl, fetchWith, PEERS, PeerError, resolveConnection, type SitePeer } from "@/lib/connect/client";
 import { encryptSecret, hasSecretKey } from "@/lib/connect/crypto";
 import { getDb } from "@/lib/db/client";
 import { connections } from "@/lib/db/schema";
@@ -21,8 +21,17 @@ export async function saveConnection(_prev: ConnState, form: FormData): Promise<
   const admin = await requireUser("admin");
   const peer = form.get("peer");
   if (!isPeer(peer)) return { ok: false, message: "חיבור לא מוכר" };
-  const baseUrl = cleanBaseUrl(String(form.get("base_url") ?? ""));
-  if (!baseUrl) return { ok: false, message: "כתובת בסיס: https:// ושם מארח בלבד, בלי נתיב, פרמטרים או פרטי התחברות" };
+  const checked = checkBaseUrl(String(form.get("base_url") ?? ""));
+  if (!checked.ok) {
+    return {
+      ok: false,
+      message:
+        checked.code === "blocked_address"
+          ? "הכתובת חסומה: אסור להפנות לכתובת IP, ל-localhost או לשם פנימי (‎.local, ‎.internal, ‎.lan). יש להזין שם מארח ציבורי ב-https."
+          : "כתובת בסיס: https:// ושם מארח בלבד, בלי נתיב, פרמטרים או פרטי התחברות",
+    };
+  }
+  const baseUrl = checked.origin;
   const key = String(form.get("key") ?? "").trim();
   const enabled = form.get("enabled") === "on";
   if (key && (key.length > 500 || /\s/.test(key))) return { ok: false, message: "המפתח לא תקין" };
@@ -31,8 +40,10 @@ export async function saveConnection(_prev: ConnState, form: FormData): Promise<
   const db = getDb();
   const [existing] = await db.select().from(connections).where(eq(connections.peer, peer)).limit(1);
   if (!key && !existing?.keyCiphertext) return { ok: false, message: "יש להדביק את המפתח שהמערכת השנייה הנפיקה לאתר" };
+  // C2: a stored key is never kept for a new address.
+  if (!key && existing && existing.baseUrl !== baseUrl) return { ok: false, message: "כתובת השתנתה — יש להזין את המפתח מחדש" };
 
-  const keyFields = key ? { keyCiphertext: encryptSecret(key), keyLast4: key.slice(-4) } : {};
+  const keyFields = key ? { keyCiphertext: encryptSecret(key, peer), keyLast4: key.slice(-4) } : {};
   const now = new Date();
   await db
     .insert(connections)
@@ -58,8 +69,8 @@ export async function checkConnection(_prev: ConnState, form: FormData): Promise
   const admin = await requireUser("admin");
   const peer = form.get("peer");
   if (!isPeer(peer)) return { ok: false, message: "חיבור לא מוכר" };
-  const conn = await resolveConnection(peer);
-  if (!conn || !conn.key) return { ok: false, message: "אין חיבור מוגדר (לא כאן ולא בהגדרות השרת)" };
+  const conn = await resolveConnection(peer).catch(() => null);
+  if (!conn || !conn.key) return { ok: false, message: "אין חיבור מוגדר (לא כאן ולא בהגדרות השרת), או שהמפתח השמור לא ניתן לפענוח — יש להזין אותו מחדש" };
 
   let ok = false;
   let detail: string;
@@ -74,6 +85,10 @@ export async function checkConnection(_prev: ConnState, form: FormData): Promise
     detail =
       e.code === "timeout"
         ? "אין תשובה תוך 5 שניות"
+        : e.code === "blocked_address" || e.code === "invalid_base_url"
+          ? "הכתובת חסומה (כתובת פנימית או לא תקינה)"
+          : e.code === "too_large"
+            ? "התשובה גדולה מדי"
         : e.code === "unreachable"
           ? "לא ניתן להתחבר לכתובת"
           : e.status === 401

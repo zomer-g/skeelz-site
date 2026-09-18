@@ -3,9 +3,10 @@
 import { headers } from "next/headers";
 import { hit } from "@/lib/api/rate-limit";
 import { clientIp } from "@/lib/api/tokens";
-import { upsertProfile } from "@/lib/apply/store";
+import { ensureProfile } from "@/lib/apply/store";
 import { readProfile, type FieldErrors } from "@/lib/apply/validate";
 import { AuthError, requireUser } from "@/lib/auth/session";
+import { logError } from "@/lib/log";
 
 /** Sandbox sign-up: the basic profile only. There is no CV here at all. */
 
@@ -19,7 +20,8 @@ export async function signUp(_prev: SignupState, form: FormData): Promise<Signup
     await requireUser("editor");
   } catch (err) {
     if (err instanceof AuthError) return { status: "error", message: err.message };
-    throw err;
+    // The database is unreachable (already logged without its details). Nothing was sent or kept.
+    return { status: "error", message: "תקלה זמנית באתר. לא נשלח ולא נשמר דבר — אפשר לנסות שוב בעוד כמה דקות." };
   }
   const values: Record<string, string> = {};
   for (const k of ["first_name", "last_name", "email", "phone", "city"]) {
@@ -32,9 +34,9 @@ export async function signUp(_prev: SignupState, form: FormData): Promise<Signup
   const { profile, errors } = readProfile(form);
   if (!profile) return { status: "error", message: "יש לתקן את השדות המסומנים.", fields: errors, values };
   try {
-    await upsertProfile(profile, "signup");
+    await ensureProfile(profile, "signup");
   } catch (err) {
-    console.error("[signup] could not save:", (err as Error).message);
+    logError("signup: save", err);
     return { status: "error", message: "ההרשמה לא נשמרה בגלל תקלה. אפשר לנסות שוב בעוד כמה דקות.", values };
   }
   return { status: "success", message: "נרשמת בהצלחה. נעדכן אותך במשרות שמתאימות לך." };

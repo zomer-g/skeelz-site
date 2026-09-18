@@ -3,6 +3,7 @@ import { cache } from "react";
 import { writeAudit } from "@/lib/audit";
 import { getDb } from "@/lib/db/client";
 import { accessRequests, auditLog, invites, users } from "@/lib/db/schema";
+import { logError } from "@/lib/log";
 import { hasRole, type Role } from "./roles";
 import { verifiedIdentity, type Identity } from "./xhost";
 
@@ -39,7 +40,14 @@ export function envAdmins(): string[] {
 export const getSession = cache(async (): Promise<Session> => {
   const identity = await verifiedIdentity();
   if (!identity) return { status: "anonymous" };
-  const user = await resolveUser(identity);
+  let user: SessionUser | null;
+  try {
+    user = await resolveUser(identity);
+  } catch (err) {
+    // C7: an uncaught drizzle error would be printed by Next with its SQL parameters (emails).
+    logError("auth: session lookup", err);
+    throw new Error("session lookup failed");
+  }
   if (!user) return { status: "refused", identity };
   return { status: "ok", identity, user };
 });
@@ -92,7 +100,7 @@ async function resolveUser(identity: Identity): Promise<SessionUser | null> {
 
   // An email is bound to the Google account that first used it.
   if (row.sub && row.sub !== identity.sub && identity.sub !== "dev-local") {
-    console.warn(`[auth] ${email} presented a different Google subject; refusing`);
+    console.warn("[auth] a user presented a different Google subject; refused (see the audit log)");
     await auditSubjectMismatch(email, identity.sub);
     return null;
   }

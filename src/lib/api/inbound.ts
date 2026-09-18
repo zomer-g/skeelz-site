@@ -3,6 +3,7 @@ import { touchKey, verifyKey, type VerifiedKey } from "@/lib/connect/keys";
 import { firstInWindow, hit, secondsLeft } from "./rate-limit";
 import { API_LIMITS, type Scope } from "./spec";
 import { clientIp } from "./tokens";
+import { logError } from "@/lib/log";
 
 /**
  * The gate every keyed /api/v1 route goes through (docs/connect-api.md §1, §3).
@@ -40,19 +41,25 @@ export function withApiKey(route: string, scope: Scope | null, handler: Handler)
     if (process.env.API_DISABLED === "true") return apiError(503, "disabled", "The API is switched off on this server.");
 
     const ip = clientIp(req.headers);
-    const lockKey = `lock:${ip}`;
-    const locked = secondsLeft(lockKey);
-    if (locked) return apiError(429, "locked_out", "Too many failed authentication attempts.", { "Retry-After": String(locked) });
+    // C5: an address we can't see is never locked out and gets only the per-key limits.
+    const knownIp = ip !== "unknown";
 
+    // C4: the named parameters, and any value that looks like one of our keys.
     const params = new URL(req.url).searchParams;
-    if (["token", "api_key", "apikey", "access_token", "key"].some((k) => params.has(k))) {
+    if (["token", "api_key", "apikey", "access_token", "key"].some((k) => params.has(k)) || [...params.values()].some((v) => v.startsWith("sk_"))) {
       return apiError(400, "token_in_url", "Send the key in the Authorization header, never in the URL.");
     }
 
+    // C5: the key is checked first; a valid key is never refused because its address is locked out.
     const bearer = /^Bearer\s+(\S+)\s*$/i.exec(req.headers.get("authorization") ?? "");
     const check = bearer ? await verifyKey(bearer[1]!) : null;
     if (!check?.ok) {
-      const failures = hit(`fail:${ip}`, API_LIMITS.authFailures, API_LIMITS.authFailureWindowMin * MIN);
+      const lockKey = `lock:${ip}`;
+      if (knownIp) {
+        const locked = secondsLeft(lockKey);
+        if (locked) return apiError(429, "locked_out", "Too many failed authentication attempts.", { "Retry-After": String(locked) });
+      }
+      const failures = knownIp ? hit(`fail:${ip}`, API_LIMITS.authFailures, API_LIMITS.authFailureWindowMin * MIN) : { ok: true };
       if (!failures.ok) hit(lockKey, 1, API_LIMITS.lockoutMin * MIN);
       if (firstInWindow(`denied:${ip}`, 10 * MIN)) {
         await writeAudit(ACTOR, "api.denied", route, { ip, reason: check ? check.reason : "missing_key", lockedOut: !failures.ok });
@@ -68,7 +75,10 @@ export function withApiKey(route: string, scope: Scope | null, handler: Handler)
       return apiError(403, "insufficient_scope", `This key lacks the "${scope}" scope.`);
     }
 
-    const limits = [hit(`ip:${ip}`, API_LIMITS.perIpPerMinute, MIN), hit(`key:${key.id}`, API_LIMITS.perKeyPerHour, 60 * MIN)];
+    const limits = [
+      ...(knownIp ? [hit(`ip:${ip}`, API_LIMITS.perIpPerMinute, MIN)] : []),
+      hit(`key:${key.id}`, API_LIMITS.perKeyPerHour, 60 * MIN),
+    ];
     const tightest = limits.reduce((a, b) => (b.remaining < a.remaining ? b : a));
     const rateHeaders = {
       "X-RateLimit-Limit": String(tightest.limit),
@@ -90,8 +100,7 @@ export function withApiKey(route: string, scope: Scope | null, handler: Handler)
       for (const [name, value] of Object.entries(rateHeaders)) res.headers.set(name, value);
       return res;
     } catch (err) {
-      const cause = (err as Error).cause;
-      console.error(`[api] ${route} failed:`, cause instanceof Error ? cause.message : (err as Error).message);
+      logError(`api: ${route}`, err);
       return apiError(500, "internal_error", "Something went wrong.", rateHeaders);
     }
   };

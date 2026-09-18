@@ -1,6 +1,7 @@
 import { and, asc, desc, eq, gt, isNull, lte, or } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
 import { banners, pinnedJobs } from "@/lib/db/schema";
+import { logError } from "@/lib/log";
 
 /** Pinned job keys in order. The list must render even if the database is down, so a failure pins nothing. */
 export async function loadPinnedKeys(): Promise<string[]> {
@@ -8,7 +9,7 @@ export async function loadPinnedKeys(): Promise<string[]> {
     const rows = await getDb().select({ key: pinnedJobs.jobKey }).from(pinnedJobs).orderBy(asc(pinnedJobs.position));
     return rows.map((r) => r.key);
   } catch (err) {
-    console.error("[cms] pinned jobs unavailable:", (err as Error).message);
+    logError("cms: pinned jobs", err);
     return [];
   }
 }
@@ -42,7 +43,7 @@ export async function loadActiveBanners(now = new Date()): Promise<ShownBanner[]
       .orderBy(desc(banners.id))
       .limit(3);
   } catch (err) {
-    console.error("[cms] banners unavailable:", (err as Error).message);
+    logError("cms: banners", err);
     return [];
   }
 }

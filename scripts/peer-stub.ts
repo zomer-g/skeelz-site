@@ -3,8 +3,8 @@
  *   crm   POST /api/v1/intake/applications (and the older /api/intake/applications)  Bearer $CRM_INTAKE_TOKEN
  *   admin GET  /api/v1/site/jobs  (serves src/data/fixture-jobs.json)               Bearer $SITE_FEED_TOKEN
  *   both  GET  /api/v1/ping       (answers as "crm" or "admin" by which token it got)
- * It answers like the real apps and keeps nothing: it logs field names and the file's size
- * only. Run `npm run stub:peers` and point CRM_URL / ADMIN_API_URL at http://127.0.0.1:3299.
+ * It answers like the real apps and keeps nothing: it logs the application id and field names
+ * only — nothing about the CV. Run `npm run stub:peers` and point CRM_URL / ADMIN_API_URL at http://127.0.0.1:3299.
  * STUB_FAIL=503 makes every intake call fail.
  */
 import { randomUUID } from "node:crypto";
@@ -57,7 +57,7 @@ createServer(async (req, res) => {
   if (cv.size > 5 * 1024 * 1024) return error(413, "too_large", "cv over 5MB");
 
   const id = String(form.get("site_application_id"));
-  console.log(`[peer-stub] ${id} job=${form.get("job_key")} fields=[${[...form.keys()].join(",")}] cv=${cv.type} ${cv.size}B`);
+  console.log(`[peer-stub] ${id} job=${form.get("job_key")} fields=[${[...form.keys()].join(",")}]`);
   const prior = seen.get(id);
   if (prior) return send(200, prior);
   const created = { application_id: `app_${randomUUID().slice(0, 8)}`, candidate_id: `cand_${randomUUID().slice(0, 8)}` };

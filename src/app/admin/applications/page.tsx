@@ -1,4 +1,4 @@
-import { desc, eq } from "drizzle-orm";
+import { desc } from "drizzle-orm";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AdminShell } from "@/components/admin/AdminShell";
@@ -30,17 +30,17 @@ export default async function ApplicationsPage() {
         status: applications.status,
         crmApplicationId: applications.crmApplicationId,
         errorCode: applications.errorCode,
-        firstName: profiles.firstName,
-        lastName: profiles.lastName,
-        email: profiles.email,
-        phone: profiles.phone,
-        city: profiles.city,
+        // M2: the details this submission gave, not the (first-come) profile.
+        firstName: applications.firstName,
+        lastName: applications.lastName,
+        email: applications.email,
+        phone: applications.phone,
+        city: applications.city,
       })
       .from(applications)
-      .leftJoin(profiles, eq(profiles.id, applications.profileId))
       .orderBy(desc(applications.createdAt))
       .limit(200),
-    db.select().from(profiles).orderBy(desc(profiles.updatedAt)).limit(200),
+    db.select().from(profiles).orderBy(desc(profiles.createdAt)).limit(200),
   ]);
 
   return (
@@ -89,7 +89,8 @@ export default async function ApplicationsPage() {
         </Card>
 
         <Card title={`פרופילים · ${people.length}`} tone="accent-light">
-          <Table head={["שם", "מייל", "טלפון", "עיר", "מקור", "עודכן"]} empty={people.length === 0 ? "עוד אין פרופילים" : undefined}>
+          <p className="mb-3 text-sm text-muted">כל פרופיל נשמר כפי שנשלח בפעם הראשונה עם אותו מייל, ולא משתנה בהגשות הבאות. בטבלת ההגשות למעלה מוצגים הפרטים שנשלחו בכל הגשה.</p>
+          <Table head={["שם", "מייל", "טלפון", "עיר", "מקור", "נוצר"]} empty={people.length === 0 ? "עוד אין פרופילים" : undefined}>
             {people.map((p) => (
               <tr key={p.id}>
                 <td className="px-3 py-2 font-medium">
@@ -103,7 +104,7 @@ export default async function ApplicationsPage() {
                 </td>
                 <td className="px-3 py-2">{p.city ?? "—"}</td>
                 <td className="px-3 py-2">{p.source === "apply" ? "הגשה" : "הרשמה"}</td>
-                <td className="px-3 py-2 whitespace-nowrap">{formatDateTime(p.updatedAt)}</td>
+                <td className="px-3 py-2 whitespace-nowrap">{formatDateTime(p.createdAt)}</td>
               </tr>
             ))}
           </Table>

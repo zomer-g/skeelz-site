@@ -1,6 +1,7 @@
 import fixture from "@/data/fixture-jobs.json";
 import { peerFetch, resolveConnection } from "@/lib/connect/client";
 import { isJobKey, type FeedJob } from "./types";
+import { logError } from "@/lib/log";
 
 /**
  * Jobs come from the admin app's feed, fetched on the server only, through
@@ -13,6 +14,10 @@ import { isJobKey, type FeedJob } from "./types";
 
 const TTL_MS = 2 * 60_000;
 const TIMEOUT_MS = 15_000;
+// C6: the feed response, the number of jobs and each description are capped.
+const MAX_FEED_BYTES = 10 * 1024 * 1024;
+const MAX_JOBS = 5000;
+const MAX_DESCRIPTION_CHARS = 100_000;
 
 export type FeedSource = "feed" | "stale" | "fixture" | "unavailable";
 
@@ -51,7 +56,7 @@ function toJob(row: unknown): FeedJob | null {
     case_number: r.case_number == null ? null : String(r.case_number),
     title: str(r.title),
     company: str(r.company),
-    description_html: typeof r.description_html === "string" ? r.description_html : null,
+    description_html: typeof r.description_html === "string" ? r.description_html.slice(0, MAX_DESCRIPTION_CHARS) : null,
     city: str(r.city),
     city_symbol: r.city_symbol == null || !Number.isFinite(symbol) ? null : symbol,
     job_scope: strList(r.job_scope),
@@ -70,6 +75,7 @@ function parse(body: unknown): { jobs: FeedJob[]; generatedAt: string | null } {
   const seen = new Set<string>();
   const jobs: FeedJob[] = [];
   for (const row of b.data) {
+    if (jobs.length >= MAX_JOBS) break;
     const job = toJob(row);
     if (job && !seen.has(job.id)) {
       seen.add(job.id);
@@ -80,7 +86,7 @@ function parse(body: unknown): { jobs: FeedJob[]; generatedAt: string | null } {
 }
 
 async function fetchFeed(): Promise<CacheState> {
-  const { jobs, generatedAt } = parse(await peerFetch("admin", "/api/v1/site/jobs", { timeoutMs: TIMEOUT_MS }));
+  const { jobs, generatedAt } = parse(await peerFetch("admin", "/api/v1/site/jobs", { timeoutMs: TIMEOUT_MS, maxBytes: MAX_FEED_BYTES }));
   return { jobs, generatedAt, fetchedAt: Date.now() };
 }
 
@@ -105,7 +111,7 @@ export async function getJobs(): Promise<JobsResult> {
     g.__skeelzSiteFeed = fresh;
     return { jobs: fresh.jobs, source: "feed", generatedAt: fresh.generatedAt };
   } catch (err) {
-    if (Date.now() - lastError > 5 * 60_000) console.error("[feed] refresh failed:", (err as Error).message);
+    if (Date.now() - lastError > 5 * 60_000) logError("feed: refresh", err);
     g.__skeelzSiteFeedLastError = Date.now();
     if (cached) return { jobs: cached.jobs, source: "stale", generatedAt: cached.generatedAt };
     return { jobs: [], source: "unavailable", generatedAt: null };

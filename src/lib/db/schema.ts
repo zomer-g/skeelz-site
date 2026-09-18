@@ -83,7 +83,10 @@ export const banners = pgTable(
 export type ProfileSource = "apply" | "signup";
 export type ApplicationStatus = "forwarded" | "failed";
 
-/** The basic profile of someone who applied or signed up. Emails are stored lowercased. Never a CV. */
+/**
+ * The basic profile of someone who applied or signed up, as first submitted (insert-only: an
+ * unauthenticated form never overwrites it). Emails are stored lowercased. Never a CV.
+ */
 export const profiles = pgTable(
   "profiles",
   {
@@ -112,6 +115,14 @@ export const applications = pgTable(
     jobKey: varchar("job_key", { length: 24 }).notNull(),
     jobTitle: text("job_title"),
     profileId: uuid("profile_id").references(() => profiles.id),
+    // M2: what this submission said, kept on the row. The form is unauthenticated, so a later
+    // submission with the same email never rewrites an earlier application (or the profile).
+    firstName: text("first_name"),
+    lastName: text("last_name"),
+    email: text("email"),
+    phone: text("phone"),
+    city: text("city"),
+    consentAt: ts("consent_at"),
     createdAt: ts("created_at").notNull().defaultNow(),
     status: text("status").$type<ApplicationStatus>().notNull(),
     crmApplicationId: text("crm_application_id"),

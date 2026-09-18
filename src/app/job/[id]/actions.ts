@@ -5,11 +5,12 @@ import { headers } from "next/headers";
 import { hit } from "@/lib/api/rate-limit";
 import { clientIp } from "@/lib/api/tokens";
 import { failureMessage, forwardApplication } from "@/lib/apply/crm";
-import { findApplication, recordApplication, upsertProfile } from "@/lib/apply/store";
+import { ensureProfile, findApplication, recordApplication } from "@/lib/apply/store";
 import { checkCv, readProfile, type FieldErrors } from "@/lib/apply/validate";
 import { AuthError, requireUser } from "@/lib/auth/session";
 import { getJob } from "@/lib/jobs/feed";
 import { isJobKey } from "@/lib/jobs/types";
+import { logError } from "@/lib/log";
 
 /**
  * The sandbox apply flow. CV RULE (CLAUDE.md): the CV is read into memory,
@@ -44,7 +45,8 @@ export async function applyToJob(_prev: ApplyState, form: FormData): Promise<App
     await requireUser("editor");
   } catch (err) {
     if (err instanceof AuthError) return { status: "error", message: err.message };
-    throw err;
+    // The database is unreachable (already logged without its details). Nothing was sent or kept.
+    return { status: "error", message: "תקלה זמנית באתר. לא נשלח ולא נשמר דבר — אפשר לנסות שוב בעוד כמה דקות." };
   }
 
   const ip = clientIp(await headers());
@@ -78,19 +80,20 @@ export async function applyToJob(_prev: ApplyState, form: FormData): Promise<App
 
   // Only now, and only the basic profile and the outcome. The CV is not passed on from here.
   try {
-    const profileId = await upsertProfile(profile, "apply");
+    const { id: profileId } = await ensureProfile(profile, "apply");
     await recordApplication({
       id: siteApplicationId,
       jobKey,
       jobTitle,
       profileId,
+      profile,
       status: result.ok ? "forwarded" : "failed",
       crmApplicationId: result.ok ? result.applicationId : null,
       crmCandidateId: result.ok ? result.candidateId : null,
       errorCode: result.ok ? null : result.code,
     });
   } catch (err) {
-    console.error("[apply] could not record the application:", (err as Error).message);
+    logError("apply: record", err);
   }
 
   if (!result.ok) return { status: "error", message: failureMessage(result), values: echo(form) };

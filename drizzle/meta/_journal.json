@@ -15,6 +15,13 @@
       "when": 1789725050861,
       "tag": "0001_connect_users",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1789732396127,
+      "tag": "0002_application_snapshot",
+      "breakpoints": true
     }
   ]
 }

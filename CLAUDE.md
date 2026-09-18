@@ -11,10 +11,13 @@ be reached.
 - The apply action (`src/app/job/[id]/actions.ts`) reads the file into memory, checks it (`src/lib/apply/validate.ts`:
   pdf/doc/docx by magic bytes, ≤ 5 MB), forwards it as multipart (`src/lib/apply/crm.ts`) and lets it go with the request.
   The part is sent as `cv.<ext>`; the visitor's file name is not kept or forwarded.
-- Stored: the profile (`profiles`, upsert by email: name, email, phone, city, consent time) and one `applications` row
-  (site_application_id, job_key, job_title, profile, status forwarded/failed, CRM ids, error code). **No file name, no
+- Stored: the profile (`profiles`, insert-only by email — an unauthenticated form never overwrites it) and one
+  `applications` row (site_application_id, job_key, job_title, profile, a snapshot of that submission's name / email /
+  phone / city / consent time, status forwarded/failed, CRM ids, error code). **No file name, no
   hash, no size, no content.** Don't add columns that describe the file.
-- Logs carry status codes only. Never log a FormData, a File, or the action's arguments.
+- Logs carry codes only: every caught error goes through `logError(where, err)` (`src/lib/log.ts`), never `err.message`
+  (a drizzle/pg message carries the query's parameters — names, emails, phones). Never log a FormData, a File, or the
+  action's arguments.
 - The admin view (`/admin/applications`) shows those fields only. There is no CV view and there must not be one.
 - No blob storage, no temp files, no upload route. `serverActions.bodySizeLimit` (6mb) exists only for this form.
 
@@ -55,7 +58,10 @@ Exact-pinned dependencies.
   - Outbound: **every call to admin or crm goes through `peerFetch(peer, path, init)`** (`src/lib/connect/client.ts`):
     the `connections` row from `/admin/connections` (key AES-256-GCM encrypted with `CONNECT_SECRET_KEY`, never sent to
     the browser), else the env pair (admin: `ADMIN_API_URL`+`SITE_FEED_TOKEN`; crm: `CRM_URL`+`CRM_INTAKE_TOKEN`).
-    base_url: https origin only (http://localhost in dev). "בדיקת חיבור" calls the peer's `/api/v1/ping` (5 s).
+    base_url: public https origin only, no IPs or internal names, checked on save and before every request with a DNS
+    check (http://localhost in dev); a new origin needs the key again; keys are `v2:` AES-GCM with the peer as AAD;
+    responses capped (5 MB, feed 10 MB). A failed crm lookup fails closed. "בדיקת חיבור" calls the peer's `/api/v1/ping` (5 s).
+    See the Amendments section of `docs/connect-api.md`.
 - **Preview markers:** fixed bar "תצוגה מקדימה — גלוי לאדמין בלבד" on every page (`PreviewBar` in the root layout);
   `robots.txt` disallows all; `<meta name="robots" content="noindex">` and `X-Robots-Tag`. **No GA, no GTM.**
 - **CSP same-origin** (`next.config.ts`): fonts (next/font Rubik), logos and icons are self-hosted; the feed and the CRM are

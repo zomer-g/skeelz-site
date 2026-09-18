@@ -105,3 +105,13 @@ Every app implements the same five parts. Copy this file into each repo as `docs
   - Every page and action checks the role on the server.
 - **Admin "view as" a lower role** (like the admin app): nice to have, only if cheap.
 - The site stays invisible to anyone without a role, as before.
+
+## Amendments (security review, all three apps)
+- **C1 base_url / SSRF:** production allows `https:` only; development also `http://localhost:<port>` and `http://127.0.0.1:<port>`. Refused: IP-literal hosts (checked with `net.isIP` after parsing, so `0x7f000001` etc. count; bracketed IPv6 too), `localhost`, `*.localhost`, `*.local`, `*.internal`, `*.lan`, single-label names, credentials, any path but `/`, a query or a fragment. Checked on save and again before every request; in production each request also resolves the host (`dns.lookup`, all addresses) and refuses loopback, private, link-local, CGNAT, unspecified, ULA, multicast and IPv4-mapped forms of those. Codes `invalid_base_url` / `blocked_address`. `redirect: "error"` and the timeout stay.
+- **C2:** saving a new origin requires the key again; the old ciphertext is never kept for a new address.
+- **C3:** AES-256-GCM with `authTagLength: 16`, a 12-byte IV and a 16-byte tag enforced, the peer name as AAD, format `v2:`. `v1` values are invalid ("re-enter the key").
+- **C4:** besides the named parameters, any query value starting with `sk_` gets 400 `token_in_url`.
+- **C5:** the key is checked first; a valid key is never refused by an address lockout. `locked_out` applies only to a missing or invalid key. The address `unknown` is never locked out or counted; it gets only the per-key limits.
+- **C6:** peer responses are capped (Content-Length checked, then a counted stream): 5 MB by default. Site: the job feed may use 10 MB, and `parse()` also caps it at 5,000 jobs and 100,000 characters of `description_html` each.
+- **C7:** no drizzle/pg `.message` (it carries SQL parameters: names, emails, phones) is ever logged. One helper, `logError(where, err)` (`src/lib/log.ts` here), logs the place and a code only: our typed error's code, the pg SQLSTATE, or `err.name`. Never log request bodies or FormData.
+- **Site only:** M2 — the apply/sign-up forms are unauthenticated, so profiles are insert-only and each application row keeps a snapshot of what that submission said (shown at `/admin/applications`). L3 — a failed lookup of the `crm` connection fails closed (no env fallback on the CV path). L6 — Word files with `vbaProject.bin` or a `macroEnabled` content type are refused (a renamed `.docm` too). L7 — RichText site paths use `/^\/(?![\/\])/`.

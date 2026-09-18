@@ -12,7 +12,9 @@ import { NewTabNote } from "./ui";
 
 type Block = { kind: "h2" | "h3" | "p"; text: string } | { kind: "ul"; items: string[] };
 
-const SAFE_HREF = /^(https?:\/\/|mailto:|\/(?!\/))/i;
+// L7: a site path is "/" not followed by "/" or "\" (browsers read "/\evil.com" as protocol-relative), as in safeLink.
+const SITE_PATH = /^\/(?![\/\\])/;
+const SAFE_HREF = /^(https?:\/\/|mailto:|\/(?![\/\\]))/i;
 const INLINE = /\*\*(.+?)\*\*|\[([^\]]+)\]\(([^)\s]+)\)/g;
 
 export function parseBlocks(body: string): Block[] {
@@ -74,7 +76,7 @@ function Inline({ text }: { text: string }) {
             {label}
           </a>,
         );
-      } else if (href.startsWith("/")) {
+      } else if (SITE_PATH.test(href)) {
         parts.push(
           <a key={n++} href={href} className="font-medium text-accent-dark underline underline-offset-4">
             {label}

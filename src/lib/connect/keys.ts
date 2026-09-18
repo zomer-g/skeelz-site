@@ -3,6 +3,7 @@ import { eq } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
 import { apiKeys } from "@/lib/db/schema";
 import { SITE_SCOPES, type Scope } from "@/lib/api/spec";
+import { logError } from "@/lib/log";
 
 /**
  * Inbound API keys (docs/connect-api.md §1): `sk_site_<43 chars base64url of 32 random bytes>`.
@@ -52,6 +53,6 @@ export async function touchKey(key: VerifiedKey, ip: string): Promise<void> {
   try {
     await getDb().update(apiKeys).set({ lastUsedAt: new Date(), lastUsedIp: ip }).where(eq(apiKeys.id, key.id));
   } catch (err) {
-    console.error("[api] could not record key use:", (err as Error).message);
+    logError("api: record key use", err);
   }
 }

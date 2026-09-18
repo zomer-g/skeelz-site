@@ -23,7 +23,7 @@ export default async function ConnectionsPage() {
   const auth = await pageAuth("admin", "/admin/connections");
   if (!auth.ok) return auth.render;
   const rows = new Map((await getDb().select().from(connections)).map((r) => [r.peer, r]));
-  const resolved = await Promise.all(PEERS.map((p) => resolveConnection(p)));
+  const resolved = await Promise.all(PEERS.map((p) => resolveConnection(p).catch(() => null)));
 
   return (
     <AdminShell email={auth.user.email} title="חיבורים" subtitle="לאן האתר פונה, ועם איזה מפתח. המפתחות נשמרים מוצפנים ולא מוצגים שוב.">
