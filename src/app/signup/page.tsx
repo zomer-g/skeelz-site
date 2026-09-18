@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 
 /** Sandbox sign-up: a basic profile, no password and no CV. */
 export default async function SignupPage() {
-  const auth = await pageAuth("/signup");
+  const auth = await pageAuth("editor", "/signup");
   if (!auth.ok) return auth.render;
   return (
     <>

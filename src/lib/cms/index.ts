@@ -22,13 +22,15 @@ export interface ShownBanner {
   text: string;
   linkUrl: string | null;
   linkLabel: string | null;
+  startsAt: Date | null;
+  endsAt: Date | null;
 }
 
 /** Banners that are active and within their dates, newest first. */
 export async function loadActiveBanners(now = new Date()): Promise<ShownBanner[]> {
   try {
     return await getDb()
-      .select({ id: banners.id, text: banners.text, linkUrl: banners.linkUrl, linkLabel: banners.linkLabel })
+      .select({ id: banners.id, text: banners.text, linkUrl: banners.linkUrl, linkLabel: banners.linkLabel, startsAt: banners.startsAt, endsAt: banners.endsAt })
       .from(banners)
       .where(
         and(

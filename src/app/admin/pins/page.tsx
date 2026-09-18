@@ -14,7 +14,7 @@ export const metadata: Metadata = { title: "משרות מוצמדות" };
 export const dynamic = "force-dynamic";
 
 export default async function PinsPage() {
-  const auth = await pageAuth("/admin/pins");
+  const auth = await pageAuth("editor", "/admin/pins");
   if (!auth.ok) return auth.render;
 
   const [pins, { jobs, source }] = await Promise.all([loadPins(), getJobs()]);

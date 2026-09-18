@@ -16,7 +16,7 @@ export const dynamic = "force-dynamic";
  * CRM's ids only. There is no CV to show — the site never holds one.
  */
 export default async function ApplicationsPage() {
-  const auth = await pageAuth("/admin/applications");
+  const auth = await pageAuth("admin", "/admin/applications");
   if (!auth.ok) return auth.render;
 
   const db = getDb();

@@ -1,13 +1,14 @@
 import fixture from "@/data/fixture-jobs.json";
-import { envBaseUrl, envSecret } from "@/lib/api/tokens";
+import { peerFetch, resolveConnection } from "@/lib/connect/client";
 import { isJobKey, type FeedJob } from "./types";
 
 /**
- * Jobs come from the admin app's feed, fetched on the server only:
- *   GET ${ADMIN_API_URL}/api/v1/site/jobs   Authorization: Bearer ${SITE_FEED_TOKEN}
+ * Jobs come from the admin app's feed, fetched on the server only, through
+ * peerFetch("admin", "/api/v1/site/jobs") — the connection set at /admin/connections,
+ * or ADMIN_API_URL + SITE_FEED_TOKEN when none is set (docs/connect-api.md §2).
  * Kept in memory for two minutes. When a refresh fails the last good copy keeps
- * serving; only a process that never got one shows "no jobs". Without
- * ADMIN_API_URL (local dev) the committed fixture stands in.
+ * serving; only a process that never got one shows "no jobs". With no admin
+ * connection at all (local dev) the committed fixture stands in.
  */
 
 const TTL_MS = 2 * 60_000;
@@ -78,22 +79,13 @@ function parse(body: unknown): { jobs: FeedJob[]; generatedAt: string | null } {
   return { jobs, generatedAt: str(b.generated_at) };
 }
 
-async function fetchFeed(base: string): Promise<CacheState> {
-  const token = envSecret("SITE_FEED_TOKEN");
-  if (!token) throw new Error("SITE_FEED_TOKEN is not set");
-  const res = await fetch(`${base}/api/v1/site/jobs`, {
-    headers: { Authorization: `Bearer ${token}`, Accept: "application/json" },
-    cache: "no-store",
-    signal: AbortSignal.timeout(TIMEOUT_MS),
-  });
-  if (!res.ok) throw new Error(`feed: HTTP ${res.status}`);
-  const { jobs, generatedAt } = parse(await res.json());
+async function fetchFeed(): Promise<CacheState> {
+  const { jobs, generatedAt } = parse(await peerFetch("admin", "/api/v1/site/jobs", { timeoutMs: TIMEOUT_MS }));
   return { jobs, generatedAt, fetchedAt: Date.now() };
 }
 
 export async function getJobs(): Promise<JobsResult> {
-  const base = envBaseUrl("ADMIN_API_URL");
-  if (!base) {
+  if (!(await resolveConnection("admin"))) {
     const { jobs, generatedAt } = parse(fixture);
     return { jobs, source: "fixture", generatedAt };
   }
@@ -106,7 +98,7 @@ export async function getJobs(): Promise<JobsResult> {
   if (cached && Date.now() - lastError < 30_000) return { jobs: cached.jobs, source: "stale", generatedAt: cached.generatedAt };
 
   try {
-    g.__skeelzSiteFeedInflight ??= fetchFeed(base).finally(() => {
+    g.__skeelzSiteFeedInflight ??= fetchFeed().finally(() => {
       g.__skeelzSiteFeedInflight = undefined;
     });
     const fresh = await g.__skeelzSiteFeedInflight;

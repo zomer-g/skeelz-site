@@ -11,7 +11,7 @@ export const metadata: Metadata = { title: "טקסטים" };
 export const dynamic = "force-dynamic";
 
 export default async function TextsPage() {
-  const auth = await pageAuth("/admin/texts");
+  const auth = await pageAuth("editor", "/admin/texts");
   if (!auth.ok) return auth.render;
 
   const saved = new Map((await loadSavedTexts()).map((t) => [t.key, t]));

@@ -16,6 +16,6 @@ export function proxy(req: NextRequest) {
 }
 
 export const config = {
-  // Every API route except the unauthenticated health check.
-  matcher: ["/api/((?!health$).*)"],
+  // Every API route except the health check and /api/v1 (keyed for other apps, see lib/api/inbound.ts).
+  matcher: ["/api/((?!health$|v1/).*)"],
 };

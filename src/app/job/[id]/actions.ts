@@ -7,7 +7,7 @@ import { clientIp } from "@/lib/api/tokens";
 import { failureMessage, forwardApplication } from "@/lib/apply/crm";
 import { findApplication, recordApplication, upsertProfile } from "@/lib/apply/store";
 import { checkCv, readProfile, type FieldErrors } from "@/lib/apply/validate";
-import { AuthError, requireAdmin } from "@/lib/auth/session";
+import { AuthError, requireUser } from "@/lib/auth/session";
 import { getJob } from "@/lib/jobs/feed";
 import { isJobKey } from "@/lib/jobs/types";
 
@@ -41,7 +41,7 @@ function echo(form: FormData): Record<string, string> {
 
 export async function applyToJob(_prev: ApplyState, form: FormData): Promise<ApplyState> {
   try {
-    await requireAdmin();
+    await requireUser("editor");
   } catch (err) {
     if (err instanceof AuthError) return { status: "error", message: err.message };
     throw err;
@@ -96,7 +96,7 @@ export async function applyToJob(_prev: ApplyState, form: FormData): Promise<App
   if (!result.ok) return { status: "error", message: failureMessage(result), values: echo(form) };
   return {
     status: "success",
-    message: result.repeat ? "המועמדות כבר הוגשה." : "בקרוב ניצור איתך קשר להמשך תהליך.",
+    message: "בקרוב ניצור איתך קשר להמשך תהליך.",
     crmApplicationId: result.applicationId,
   };
 }

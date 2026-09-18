@@ -1,11 +1,14 @@
-import { envBaseUrl, envSecret } from "@/lib/api/tokens";
+import { peerFetch, PeerError } from "@/lib/connect/client";
 import type { CheckedCv, ProfileInput } from "./validate";
 
 /**
- * Forwards one application to the CRM, in memory, as multipart:
- *   POST ${CRM_URL}/api/intake/applications   Authorization: Bearer ${CRM_INTAKE_TOKEN}
- * 201 (created) or 200 (an idempotent repeat of the same site_application_id)
- * → {application_id, candidate_id}. Errors → {error:{code,message}}.
+ * Forwards one application to the CRM, in memory, as multipart, through
+ * peerFetch("crm", "/api/v1/intake/applications") — the connection set at
+ * /admin/connections, or CRM_URL + CRM_INTAKE_TOKEN when none is set. A CRM that
+ * answers 404 there (not yet on the v1 path) gets the same request at its older
+ * alias /api/intake/applications; site_application_id makes the repeat harmless.
+ * 201 (created) or 200 (an idempotent repeat) → {application_id, candidate_id}.
+ * Errors → {error:{code,message}}.
  *
  * CV RULE: the file is appended to the outgoing body and nothing else. It is
  * never written to disk, the database or a log, and error handling below logs
@@ -23,14 +26,10 @@ export interface ForwardInput {
 }
 
 export type ForwardResult =
-  | { ok: true; applicationId: string | null; candidateId: string | null; repeat: boolean }
+  | { ok: true; applicationId: string | null; candidateId: string | null }
   | { ok: false; code: string; status: number | null };
 
 export async function forwardApplication(input: ForwardInput): Promise<ForwardResult> {
-  const base = envBaseUrl("CRM_URL");
-  const token = envSecret("CRM_INTAKE_TOKEN");
-  if (!base || !token) return { ok: false, code: "not_configured", status: null };
-
   const body = new FormData();
   body.set("site_application_id", input.siteApplicationId);
   body.set("job_key", input.jobKey);
@@ -43,33 +42,23 @@ export async function forwardApplication(input: ForwardInput): Promise<ForwardRe
   body.set("consent", "true");
   body.set("cv", new Blob([input.cv.bytes as BlobPart], { type: input.cv.contentType }), input.cv.filename);
 
-  let res: Response;
+  const post = (path: string) => peerFetch<Record<string, unknown>>("crm", path, { method: "POST", body, timeoutMs: TIMEOUT_MS });
   try {
-    res = await fetch(`${base}/api/intake/applications`, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${token}`, Accept: "application/json" },
-      body,
-      cache: "no-store",
-      redirect: "error",
-      signal: AbortSignal.timeout(TIMEOUT_MS),
-    });
-  } catch (err) {
-    const name = (err as Error).name;
-    const code = name === "TimeoutError" || name === "AbortError" ? "timeout" : "unreachable";
-    console.error(`[apply] CRM ${code}`);
-    return { ok: false, code, status: null };
-  }
-
-  const json = (await res.json().catch(() => null)) as Record<string, unknown> | null;
-  if (res.status === 201 || res.status === 200) {
+    let json: Record<string, unknown>;
+    try {
+      json = await post("/api/v1/intake/applications");
+    } catch (err) {
+      if (!(err instanceof PeerError && err.code === "http" && err.status === 404)) throw err;
+      json = await post("/api/intake/applications");
+    }
     const id = (v: unknown) => (typeof v === "string" || typeof v === "number" ? String(v).slice(0, 100) : null);
-    return { ok: true, applicationId: id(json?.application_id), candidateId: id(json?.candidate_id), repeat: res.status === 200 };
+    return { ok: true, applicationId: id(json.application_id), candidateId: id(json.candidate_id) };
+  } catch (err) {
+    if (!(err instanceof PeerError)) throw err;
+    const code = err.code === "http" ? (err.peerCode ?? `http_${err.status}`) : err.code;
+    console.error(`[apply] CRM ${err.code}${err.status ? ` HTTP ${err.status}` : ""} ${code}`);
+    return { ok: false, code, status: err.status };
   }
-
-  const error = json?.error as { code?: unknown } | undefined;
-  const code = typeof error?.code === "string" && /^[\w.-]{1,40}$/.test(error.code) ? error.code : `http_${res.status}`;
-  console.error(`[apply] CRM refused: HTTP ${res.status} ${code}`);
-  return { ok: false, code, status: res.status };
 }
 
 /** What the visitor reads when the CRM did not take the application. Nothing about it was kept. */
@@ -88,7 +77,7 @@ export function failureMessage(result: Extract<ForwardResult, { ok: false }>): s
     case 403:
       return `תקלה בחיבור למערכת הגיוס. ${notKept} אפשר לנסות שוב מאוחר יותר.`;
   }
-  if (result.code === "not_configured") return `מערכת הגיוס אינה מחוברת לאתר עדיין. ${notKept}`;
+  if (result.code === "not_configured" || result.code === "disabled") return `מערכת הגיוס אינה מחוברת לאתר עדיין. ${notKept}`;
   if (result.code === "timeout") return `מערכת הגיוס לא ענתה בזמן. ${notKept} אפשר לנסות שוב בעוד כמה דקות.`;
   return `מערכת הגיוס אינה זמינה כרגע. ${notKept} אפשר לנסות שוב בעוד כמה דקות.`;
 }

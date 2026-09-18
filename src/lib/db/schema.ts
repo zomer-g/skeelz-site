@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { bigserial, boolean, check, index, integer, jsonb, pgTable, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
+import { bigserial, boolean, check, index, integer, jsonb, pgTable, text, timestamp, uniqueIndex, uuid, varchar } from "drizzle-orm/pg-core";
 
 const ts = (name: string) => timestamp(name, { withTimezone: true });
 
@@ -124,4 +124,94 @@ export const applications = pgTable(
     index("applications_created_idx").on(t.createdAt),
     index("applications_profile_idx").on(t.profileId),
   ],
+);
+
+/* ------------------------------------------------------------------ access */
+
+export type Role = "editor" | "admin";
+
+/** People allowed into the site while it is a preview (and into /admin after launch). Emails lowercased. */
+export const users = pgTable(
+  "users",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    email: text("email").notNull().unique(),
+    // Google subject from the xhostd token; bound on first sign-in.
+    sub: text("sub").unique(),
+    name: text("name"),
+    role: text("role").$type<Role>().notNull().default("editor"),
+    active: boolean("active").notNull().default(true),
+    createdAt: ts("created_at").notNull().defaultNow(),
+    lastLoginAt: ts("last_login_at"),
+  },
+  (t) => [check("users_role_check", sql`${t.role} in ('editor', 'admin')`)],
+);
+
+/** An admin's invitation, redeemed when that email first signs in. */
+export const invites = pgTable(
+  "invites",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    email: text("email").notNull(),
+    role: text("role").$type<Role>().notNull(),
+    invitedBy: text("invited_by").notNull(),
+    createdAt: ts("created_at").notNull().defaultNow(),
+    expiresAt: ts("expires_at").notNull(),
+    acceptedAt: ts("accepted_at"),
+    revokedAt: ts("revoked_at"),
+  },
+  (t) => [
+    check("invites_role_check", sql`${t.role} in ('editor', 'admin')`),
+    uniqueIndex("invites_open_email_idx").on(t.email).where(sql`accepted_at is null and revoked_at is null`),
+  ],
+);
+
+/** Sign-ins that were refused, so an admin can approve them with one click. */
+export const accessRequests = pgTable("access_requests", {
+  email: text("email").primaryKey(),
+  name: text("name"),
+  attempts: integer("attempts").notNull().default(1),
+  firstAt: ts("first_at").notNull().defaultNow(),
+  lastAt: ts("last_at").notNull().defaultNow(),
+});
+
+/* ---------------------------------------------------------------- connect */
+
+/** Inbound API keys issued at /admin/api. Only the sha256 of a key is kept (docs/connect-api.md §1). */
+export const apiKeys = pgTable(
+  "api_keys",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    name: text("name").notNull(),
+    prefix: varchar("prefix", { length: 8 }).notNull(),
+    hash: varchar("hash", { length: 64 }).notNull(),
+    scopes: text("scopes").array().notNull(),
+    createdBy: text("created_by").notNull(),
+    createdAt: ts("created_at").notNull().defaultNow(),
+    expiresAt: ts("expires_at"),
+    lastUsedAt: ts("last_used_at"),
+    lastUsedIp: text("last_used_ip"),
+    revokedAt: ts("revoked_at"),
+  },
+  (t) => [uniqueIndex("api_keys_hash_idx").on(t.hash)],
+);
+
+export type Peer = "admin" | "crm" | "site";
+
+/** Outbound connections to the other SKEELZ apps; the key they issued to us, AES-256-GCM encrypted (§2). */
+export const connections = pgTable(
+  "connections",
+  {
+    peer: text("peer").$type<Peer>().primaryKey(),
+    baseUrl: text("base_url").notNull(),
+    keyCiphertext: text("key_ciphertext"),
+    keyLast4: varchar("key_last4", { length: 4 }),
+    enabled: boolean("enabled").notNull().default(true),
+    updatedBy: text("updated_by").notNull(),
+    updatedAt: ts("updated_at").notNull().defaultNow(),
+    lastCheckAt: ts("last_check_at"),
+    lastCheckOk: boolean("last_check_ok"),
+    lastCheckDetail: text("last_check_detail"),
+  },
+  (t) => [check("connections_peer_check", sql`${t.peer} in ('admin', 'crm', 'site')`)],
 );

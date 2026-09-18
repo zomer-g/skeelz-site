@@ -22,7 +22,7 @@ type SearchParams = Record<string, string | string[] | undefined>;
 export default async function JobsPage({ searchParams }: { searchParams: Promise<SearchParams> }) {
   const search = await searchParams;
   const filters = readFilters(search);
-  const auth = await pageAuth(`/${filtersQuery(filters)}`);
+  const auth = await pageAuth("editor", `/${filtersQuery(filters)}`);
   if (!auth.ok) return auth.render;
 
   const [{ jobs, source }, pinned, hero] = await Promise.all([getJobs(), loadPinnedKeys(), loadText("home_hero")]);

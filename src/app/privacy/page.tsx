@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "מדיניות פרטיות" };
 export const dynamic = "force-dynamic";
 
 export default async function PrivacyPage() {
-  const auth = await pageAuth("/privacy");
+  const auth = await pageAuth("editor", "/privacy");
   if (!auth.ok) return auth.render;
   return <TextPage textKey="privacy" showUpdated={true} />;
 }

@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "הצהרת נגישות" };
 export const dynamic = "force-dynamic";
 
 export default async function AccessibilityPage() {
-  const auth = await pageAuth("/accessibility");
+  const auth = await pageAuth("editor", "/accessibility");
   if (!auth.ok) return auth.render;
   return <TextPage textKey="accessibility" showUpdated={true} />;
 }

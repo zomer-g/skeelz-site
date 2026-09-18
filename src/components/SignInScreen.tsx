@@ -10,7 +10,7 @@ export function SignInScreen({ returnTo }: { returnTo: string }) {
         <h1 className="bg-accent px-8 py-6 text-center text-2xl font-medium text-white">אתר המשרות החדש של SKEELZ</h1>
         <div className="flex flex-col items-center gap-6 bg-surface px-8 py-8 text-center">
           <p className="text-muted">
-            האתר בתצוגה מקדימה, והגישה אליו מותרת לאדמינים בלבד.
+            האתר בתצוגה מקדימה, והגישה אליו מותרת רק למשתמשים שהוזמנו.
             <br />
             הכניסה מתבצעת עם חשבון Google דרך XHOST.
           </p>

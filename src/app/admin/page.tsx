@@ -33,7 +33,7 @@ function Stat({ label, value, href }: { label: string; value: string; href: stri
 }
 
 export default async function AdminHome() {
-  const auth = await pageAuth("/admin");
+  const auth = await pageAuth("editor", "/admin");
   if (!auth.ok) return auth.render;
 
   const db = getDb();

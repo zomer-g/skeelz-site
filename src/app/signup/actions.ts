@@ -5,7 +5,7 @@ import { hit } from "@/lib/api/rate-limit";
 import { clientIp } from "@/lib/api/tokens";
 import { upsertProfile } from "@/lib/apply/store";
 import { readProfile, type FieldErrors } from "@/lib/apply/validate";
-import { AuthError, requireAdmin } from "@/lib/auth/session";
+import { AuthError, requireUser } from "@/lib/auth/session";
 
 /** Sandbox sign-up: the basic profile only. There is no CV here at all. */
 
@@ -16,7 +16,7 @@ export type SignupState =
 
 export async function signUp(_prev: SignupState, form: FormData): Promise<SignupState> {
   try {
-    await requireAdmin();
+    await requireUser("editor");
   } catch (err) {
     if (err instanceof AuthError) return { status: "error", message: err.message };
     throw err;

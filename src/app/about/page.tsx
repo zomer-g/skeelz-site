@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "אודות" };
 export const dynamic = "force-dynamic";
 
 export default async function AboutPage() {
-  const auth = await pageAuth("/about");
+  const auth = await pageAuth("editor", "/about");
   if (!auth.ok) return auth.render;
   return <TextPage textKey="about" showUpdated={false} />;
 }

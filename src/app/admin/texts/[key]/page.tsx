@@ -17,7 +17,7 @@ export default async function EditTextPage({ params }: { params: Promise<{ key: 
   const { key } = await params;
   const text = findText(key);
   if (!text) notFound();
-  const auth = await pageAuth(`/admin/texts/${key}`);
+  const auth = await pageAuth("editor", `/admin/texts/${key}`);
   if (!auth.ok) return auth.render;
 
   const [current, versions] = await Promise.all([loadText(key), loadVersions(key)]);

@@ -3,7 +3,7 @@
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { writeAudit } from "@/lib/audit";
-import { requireAdmin } from "@/lib/auth/session";
+import { requireUser } from "@/lib/auth/session";
 import { safeLink } from "@/lib/cms";
 import { getDb } from "@/lib/db/client";
 import { banners } from "@/lib/db/schema";
@@ -30,7 +30,7 @@ function refresh() {
 }
 
 export async function createBanner(_prev: BannerState, form: FormData): Promise<BannerState> {
-  const admin = await requireAdmin();
+  const admin = await requireUser("editor");
   const text = String(form.get("text") ?? "")
     .replace(/\s+/g, " ")
     .trim();
@@ -62,7 +62,7 @@ export async function createBanner(_prev: BannerState, form: FormData): Promise<
 }
 
 export async function toggleBanner(form: FormData): Promise<void> {
-  const admin = await requireAdmin();
+  const admin = await requireUser("editor");
   const id = Number(form.get("id"));
   if (!Number.isSafeInteger(id) || id <= 0) return;
   const active = form.get("active") === "true";
@@ -74,7 +74,7 @@ export async function toggleBanner(form: FormData): Promise<void> {
 }
 
 export async function deleteBanner(form: FormData): Promise<void> {
-  const admin = await requireAdmin();
+  const admin = await requireUser("editor");
   const id = Number(form.get("id"));
   if (!Number.isSafeInteger(id) || id <= 0) return;
   const [row] = await getDb().delete(banners).where(eq(banners.id, id)).returning();

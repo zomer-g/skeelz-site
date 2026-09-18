@@ -20,8 +20,11 @@ export function envBaseUrl(name: "ADMIN_API_URL" | "CRM_URL"): string | null {
   }
 }
 
-/** The caller's address as xhostd's proxy reports it (first X-Forwarded-For entry), for rate limits only. */
+/**
+ * The caller's address, for rate limits only. xhostd's edge appends the real client to
+ * X-Forwarded-For, so the last entry is the one a caller cannot forge.
+ */
 export function clientIp(headers: Headers): string {
-  const forwarded = headers.get("x-forwarded-for")?.split(",")[0]?.trim();
-  return forwarded || headers.get("x-real-ip")?.trim() || "unknown";
+  const forwarded = headers.get("x-forwarded-for")?.split(",").map((s) => s.trim()).filter(Boolean);
+  return forwarded?.at(-1) || headers.get("x-real-ip")?.trim() || "unknown";
 }

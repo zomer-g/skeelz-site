@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 export default async function JobPage({ params }: { params: Params }) {
   const { id } = await params;
   if (!isJobKey(id)) notFound();
-  const auth = await pageAuth(`/job/${id}`);
+  const auth = await pageAuth("editor", `/job/${id}`);
   if (!auth.ok) return auth.render;
 
   const { job, source } = await getJob(id);

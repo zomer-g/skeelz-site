@@ -18,7 +18,7 @@ function state(b: { active: boolean; startsAt: Date | null; endsAt: Date | null 
 }
 
 export default async function BannersPage() {
-  const auth = await pageAuth("/admin/banners");
+  const auth = await pageAuth("editor", "/admin/banners");
   if (!auth.ok) return auth.render;
   const rows = await loadAllBanners();
   const now = new Date();

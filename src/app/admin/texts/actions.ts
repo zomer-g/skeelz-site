@@ -3,7 +3,7 @@
 import { and, eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { writeAudit } from "@/lib/audit";
-import { requireAdmin } from "@/lib/auth/session";
+import { requireUser } from "@/lib/auth/session";
 import { getDb } from "@/lib/db/client";
 import { siteTexts, siteTextVersions } from "@/lib/db/schema";
 import { findText, MAX_TEXT_LENGTH, ORIGINAL_AUTHOR, type EditableText } from "@/lib/texts/registry";
@@ -39,7 +39,7 @@ function refresh(text: EditableText) {
 }
 
 export async function saveText(_prev: TextActionState, form: FormData): Promise<TextActionState> {
-  const admin = await requireAdmin();
+  const admin = await requireUser("editor");
   const text = findText(String(form.get("key") ?? ""));
   if (!text) return { ok: false, message: "הטקסט לא מוכר" };
 
@@ -57,7 +57,7 @@ export async function saveText(_prev: TextActionState, form: FormData): Promise<
 }
 
 export async function restoreVersion(form: FormData): Promise<void> {
-  const admin = await requireAdmin();
+  const admin = await requireUser("editor");
   const text = findText(String(form.get("key") ?? ""));
   const id = Number(form.get("versionId"));
   if (!text || !Number.isSafeInteger(id) || id <= 0) throw new Error("invalid version");

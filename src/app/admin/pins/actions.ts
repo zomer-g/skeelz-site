@@ -3,7 +3,7 @@
 import { asc, eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { writeAudit } from "@/lib/audit";
-import { requireAdmin } from "@/lib/auth/session";
+import { requireUser } from "@/lib/auth/session";
 import { getDb } from "@/lib/db/client";
 import { pinnedJobs } from "@/lib/db/schema";
 import { getJob } from "@/lib/jobs/feed";
@@ -21,7 +21,7 @@ function refresh() {
 }
 
 export async function pinJob(_prev: PinState, form: FormData): Promise<PinState> {
-  const admin = await requireAdmin();
+  const admin = await requireUser("editor");
   const key = String(form.get("key") ?? "")
     .trim()
     .toLowerCase();
@@ -43,7 +43,7 @@ export async function pinJob(_prev: PinState, form: FormData): Promise<PinState>
 }
 
 export async function unpinJob(form: FormData): Promise<void> {
-  const admin = await requireAdmin();
+  const admin = await requireUser("editor");
   const key = String(form.get("key") ?? "");
   if (!isJobKey(key)) return;
   const [row] = await getDb().delete(pinnedJobs).where(eq(pinnedJobs.jobKey, key)).returning();
@@ -55,7 +55,7 @@ export async function unpinJob(form: FormData): Promise<void> {
 
 /** Swaps a pinned job with its neighbour above or below. */
 export async function movePin(form: FormData): Promise<void> {
-  const admin = await requireAdmin();
+  const admin = await requireUser("editor");
   const key = String(form.get("key") ?? "");
   const dir = form.get("dir") === "up" ? -1 : 1;
   if (!isJobKey(key)) return;
