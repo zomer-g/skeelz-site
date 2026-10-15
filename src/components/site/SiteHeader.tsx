@@ -22,9 +22,16 @@ export function SiteHeader({
   return (
     <header className="flex flex-col items-center border-b-2 border-black pt-3 pb-5">
       <div className="relative mx-auto flex w-full max-w-[75.375rem] items-center justify-between px-4 py-1">
-        <Link href="/" className="shrink-0">
+        <Link href="/" className="relative shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/logo.svg" alt="SKEELZ — לכל המשרות" width={96} height={48} className="h-12 w-auto" />
+          {/* A rubber stamp over the logo: decorative, so screen readers skip it. */}
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute -end-5 -bottom-1 -rotate-12 rounded-sm border-2 border-double border-danger bg-white/70 px-1 font-mono text-[0.625rem] leading-tight font-bold tracking-[0.15em] text-danger uppercase"
+          >
+            Underground
+          </span>
         </Link>
         <Title className="absolute start-1/2 hidden translate-x-1/2 text-center text-4xl font-medium md:block">{title}</Title>
         <nav aria-label="חשבון" className="flex items-center gap-1">
