@@ -41,7 +41,7 @@ function inBounds(z: number, x: number, y: number): boolean {
 const png = (body: ArrayBuffer) =>
   new Response(body, { headers: { "Content-Type": "image/png", "Cache-Control": "private, max-age=86400" } });
 
-export async function GET(_req: Request, ctx: RouteContext<"/api/tiles/[z]/[x]/[y]">) {
+export async function GET(_req: Request, ctx: { params: Promise<{ z: string; x: string; y: string }> }) {
   try {
     await requireUser("editor");
   } catch (err) {
