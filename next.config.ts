@@ -4,7 +4,8 @@ const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "DENY" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=()" },
+  // geolocation=(self): /map's "המיקום שלי". The position stays in the browser (distances are computed there).
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(self), payment=()" },
   { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
   // Admin-only preview: nothing here may be indexed (robots.txt and the meta tag say the same).
   { key: "X-Robots-Tag", value: "noindex, nofollow" },
@@ -13,7 +14,8 @@ const securityHeaders = [
 const isDev = process.env.NODE_ENV === "development";
 
 // Everything the browser loads is same-origin: next/font self-hosts Rubik, the logos are in
-// /public, and the job feed and the CRM are called only from the server. No GA, no GTM.
+// /public, the map tiles come through /api/tiles, and the job feed and the CRM are called
+// only from the server. No GA, no GTM.
 // Next's inline bootstrap scripts need 'unsafe-inline'; `next dev` also needs eval and its HMR websocket.
 const contentSecurityPolicy = [
   "default-src 'self'",

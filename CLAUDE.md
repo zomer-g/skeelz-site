@@ -65,7 +65,14 @@ Exact-pinned dependencies.
 - **Preview markers:** fixed bar "תצוגה מקדימה — גלוי לאדמין בלבד" on every page (`PreviewBar` in the root layout);
   `robots.txt` disallows all; `<meta name="robots" content="noindex">` and `X-Robots-Tag`. **No GA, no GTM.**
 - **CSP same-origin** (`next.config.ts`): fonts (next/font Rubik), logos and icons are self-hosted; the feed and the CRM are
-  called from the server only. Keep it that way.
+  called from the server only; map tiles come through `/api/tiles/{z}/{x}/{y}` (server fetches OpenStreetMap, in-memory
+  cache, Israel bbox and zoom 7–17 only, `requireUser("editor")`). Keep it that way.
+- **Job map (`/map`):** Leaflet (bundled, client-only). Centre = a locality (in the URL as `city=<symbol>`), the visitor's
+  own location, or a click on the map — **a visitor's location never leaves the browser and never goes in the URL**;
+  distances are computed client-side. `radius`, `skills` (any-of), `remote=0` are in the URL too. Coordinates per city
+  symbol: `src/data/geo.json` (CBS point layer, via OVER) + hand-added industrial parks in `src/lib/jobs/geo.ts`; nationwide
+  jobs (symbols < 0) have no point and sit behind the "מהבית / פריסה ארצית" toggle. `Permissions-Policy` allows
+  `geolocation=(self)` for this page's "המיקום שלי".
 - **Jobs** come from the admin app's feed: `peerFetch("admin", "/api/v1/site/jobs")` (`src/lib/jobs/feed.ts`): server-side
   only, in memory for 2 minutes, the last good copy on error. With no admin connection at all (no row, no env) the
   committed fixture is used (local dev only). `id` is the 24-hex site key; `/job/<id>` keeps the live URLs for SEO.
